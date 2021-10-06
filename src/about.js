@@ -1,6 +1,3 @@
 import "./sections/about/about.html";
+import "../assets/styles/normalize.css";
 import "./sections/about/about.css";
-
-export default function printMe() {
-  console.log("I get called from about.js!");
-}
