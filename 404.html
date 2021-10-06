@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found</title>
+  </head>
+  <body>
+    <!-- home page button  -->
+    <div id="home-button" data-scene data-speed="1">
+      <a href="./index.html">
+        <img
+          style="width: 30px; height: 30px"
+          src="./assets/images/icons/home.png"
+          alt="home page button"
+        />
+      </a>
+    </div>
+    <!-- home page button end  -->
+    <div class="app">
+      <div class="container">
+        <h1 class="header">
+          <span>&#52;</span>
+          <span>&lt;</span>
+          <span>&#8725;</span>
+          <span>&#62;</span>
+          <span>&#52;</span>
+        </h1>
+        <div>
+          <p>
+            Error
+            <span>&#52;</span>
+            <span>&#48;</span>
+            <span>&#52;</span>
+            <span>&#40;</span>
+            <span>&#41;</span>
+            <span>&#123;</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            message <span>&#61;</span> <span>&#34;</span> page not found
+            <span>&#34;</span>
+            <span>&#44;</span>
+          </p>
+          <p>
+            action <span>&#61;</span> <span>&#34;</span> click the
+            <mark>home</mark> button please
+            <span>&#34;</span>
+            <span>&#44;</span>
+          </p>
+          <p><span>&#125;</span><span>&#59;</span></p>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        overflow-x: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: monospace;
+        margin: 0;
+        background-color: #ededed;
+      }
+      .app {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 > span {
+        font-size: 100px;
+        color: #444444;
+      }
+
+      /* HOME BUTTON */
+      #home-button {
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+      }
+      #home-button img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+      }
+      #home-button img:hover {
+        margin-left: 5px;
+      }
+
+      .container p {
+        color: #aaaaaa;
+      }
+      mark {
+        background-color: #ffffff;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: monospace;
+  margin: 0;
+  background-color: #ededed;
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=resume.css.map */
