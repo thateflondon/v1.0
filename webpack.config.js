@@ -1,6 +1,6 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const path = require("path");
 
 module.exports = {
   entry: {
@@ -59,6 +59,18 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
+        options: {
+          sources: {
+            list: [
+              "...",
+              //   {
+              //     tag: "a",
+              //     attribute: "href",
+              //     type: "src",
+              //   },
+            ],
+          },
+        },
       },
       {
         test: /\.js$/,
@@ -71,17 +83,17 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }],
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(pdf|png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
-      //   {
-      //     test: /\.(png|svg|jpg|jpeg|gif)$/,
-      //     use: [{ loader: "file-loader" }],
-      //   },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };
