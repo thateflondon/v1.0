@@ -63,17 +63,17 @@ module.exports = {
           sources: {
             list: [
               "...",
-              //   {
-              //     tag: "a",
-              //     attribute: "href",
-              //     type: "src",
-              //   },
+              // {
+              //   tag: "a",
+              //   attribute: "href",
+              //   type: "src",
+              // },
             ],
           },
         },
       },
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /(node_modules)/,
         use: {
           loader: "babel-loader",
@@ -95,5 +95,5 @@ module.exports = {
         type: "asset/resource",
       },
     ],
-  },,
+  },
 };
