@@ -1,6 +1,9 @@
 const path = require("path");
+const { basename } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   entry: {
@@ -52,6 +55,31 @@ module.exports = {
       chunks: ["projects"],
     }),
     new CleanWebpackPlugin(),
+    new FaviconsWebpackPlugin({
+      logo: "./assets/images/logo.png",
+      inject: (htmlPlugin) =>
+        basename(htmlPlugin.options.filename) === "index.html",
+    }),
+    new FaviconsWebpackPlugin({
+      logo: "./assets/images/logo.png",
+      inject: (htmlPlugin) =>
+        basename(htmlPlugin.options.filename) === "about.html",
+    }),
+    new FaviconsWebpackPlugin({
+      logo: "./assets/images/logo.png",
+      inject: (htmlPlugin) =>
+        basename(htmlPlugin.options.filename) === "contact.html",
+    }),
+    new FaviconsWebpackPlugin({
+      logo: "./assets/images/logo.png",
+      inject: (htmlPlugin) =>
+        basename(htmlPlugin.options.filename) === "design.html",
+    }),
+    new FaviconsWebpackPlugin({
+      logo: "./assets/images/logo.png",
+      inject: (htmlPlugin) =>
+        basename(htmlPlugin.options.filename) === "projects.html",
+    }),
   ],
 
   module: {
