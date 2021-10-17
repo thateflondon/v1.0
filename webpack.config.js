@@ -107,11 +107,11 @@ module.exports = {
           sources: {
             list: [
               "...",
-              {
-                tag: "a",
-                attribute: "href",
-                type: "src",
-              },
+              // {
+              //   tag: "a",
+              //   attribute: "href",
+              //   type: "src",
+              // },
             ],
           },
         },
