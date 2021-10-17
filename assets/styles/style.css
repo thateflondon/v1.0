@@ -184,4 +184,28 @@ a:active {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .notCursor * {
+    cursor: auto;
+  }
+  div[class*="kursor"] {
+    display: none !important;
+  }
+  div[class*="kursorChild"] {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 812px) and (max-height: 430px) and (orientation: landscape) {
+  div[class*="kursor"] {
+    display: none !important;
+  }
+  div[class*="kursorChild"] {
+    display: none !important;
+  }
+  .notCursor * {
+    cursor: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */

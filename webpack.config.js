@@ -148,11 +148,11 @@ module.exports = {
          * If you want to inline larger images, you can set
          * a custom `maxSize` for inline like so:
          */
-        // parser: {
-        //   dataUrlCondition: {
-        //     maxSize: 30 * 1024,
-        //   },
-        // },
+        parser: {
+          dataUrlCondition: {
+            maxSize: 30 * 1024,
+          },
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
