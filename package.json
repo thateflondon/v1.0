@@ -50,7 +50,10 @@
     "build": "webpack --mode=production"
   },
   "keywords": [
-    "developer, full, stack, web"
+    "Portfolio",
+    "Web",
+    "Developer",
+    "Full Stack"
   ],
   "author": "Jerry FREDERIC",
   "license": "ISC"
