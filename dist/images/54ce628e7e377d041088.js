@@ -1,0 +1,1 @@
+var r=rolly({view:document.querySelector(".app"),native:!0});window.innerWidth>1024&&r.init();

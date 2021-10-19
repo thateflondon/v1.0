@@ -15,6 +15,7 @@
     "lodash": "^4.17.21",
     "path": "^0.12.7",
     "rolly.js": "^0.4.0",
+    "svgo": "^2.0.0",
     "xml-loader": "^1.2.1"
   },
   "devDependencies": {
@@ -46,7 +47,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["developer, full, stack, web"],
+  "keywords": [
+    "developer, full, stack, web"
+  ],
   "author": "Jerry FREDERIC",
   "license": "ISC"
 }

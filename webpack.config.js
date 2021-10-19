@@ -1,7 +1,5 @@
 const path = require("path");
 const { basename } = require("path");
-
-// const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -76,20 +74,20 @@ const plugins = [
         // Svgo configuration here https://github.com/svg/svgo#configuration
         [
           "svgo",
-          // {
-          //   plugins: extendDefaultPlugins([
-          //     {
-          //       name: "removeViewBox",
-          //       active: false,
-          //     },
-          //     {
-          //       name: "addAttributesToSVGElement",
-          //       params: {
-          //         attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
-          //       },
-          //     },
-          //   ]),
-          // },
+          {
+            plugins: extendDefaultPlugins([
+              {
+                name: "removeViewBox",
+                active: false,
+              },
+              {
+                name: "addAttributesToSVGElement",
+                params: {
+                  attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
+                },
+              },
+            ]),
+          },
         ],
       ],
     },
@@ -202,6 +200,7 @@ module.exports = {
              * will attempt to read from the cache to avoid needing to run
              * the potentially expensive Babel recompilation process on each run.
              */
+            presets: ["@babel/preset-env", "@babel/preset-react"],
             cacheDirectory: true,
           },
         },
