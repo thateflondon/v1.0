@@ -1,6 +1,8 @@
 :root {
   --primary-color: #ededed;
   --secondary-color: #444444;
+  --third-color: #aaaaaa;
+  --fourth-color: #ffffff;
 }
 
 html,
@@ -32,6 +34,12 @@ body {
       -ms-flex: 1;
           flex: 1;
   text-align: right;
+  margin-top: 15px;
+}
+
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
 }
 
 /* Fonts */

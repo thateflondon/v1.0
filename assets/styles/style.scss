@@ -1,6 +1,8 @@
 :root {
-  --primary-color: #ededed;
-  --secondary-color: #444444;
+  --primary-color: #ededed; //$color1
+  --secondary-color: #444444; //$color2
+  --third-color: #aaaaaa; //$color3
+  --fourth-color: #ffffff; //$bright
 }
 
 html,
@@ -28,6 +30,12 @@ body {
   width: 25px;
   flex: 1;
   text-align: right;
+  margin-top: 15px;
+}
+
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
 }
 // .theme-color {
 //   display: flex;
