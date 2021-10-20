@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #ededed;
+  --secondary-color: #444444;
+}
+
 html,
 body {
   height: 100%;
@@ -7,9 +12,26 @@ body {
 body {
   margin: 0;
   text-align: center;
-  background: #ededed;
+  background: var(--primary-color);
   font-weight: 400;
   line-height: 1.2rem;
+}
+
+/* DARK MODE */
+.theme-color {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  width: 98%;
+}
+
+#icon {
+  width: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
 }
 
 /* Fonts */
@@ -95,7 +117,7 @@ body {
 }
 
 a {
-  color: #444444;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -119,7 +141,7 @@ a:active {
 
 .menuItem a {
   font-size: 1em;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 #projects-list-home {
