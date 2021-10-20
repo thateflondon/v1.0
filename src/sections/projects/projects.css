@@ -544,4 +544,28 @@ footer .copyright p #year {
 [data-scene]:last-of-type {
   margin-bottom: 22.5vh;
 }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .notCursor * {
+    cursor: auto;
+  }
+  div[class*="kursor"] {
+    display: none !important;
+  }
+  div[class*="kursorChild"] {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 812px) and (max-height: 430px) and (orientation: landscape) {
+  div[class*="kursor"] {
+    display: none !important;
+  }
+  div[class*="kursorChild"] {
+    display: none !important;
+  }
+  .notCursor * {
+    cursor: auto;
+  }
+}
 /*# sourceMappingURL=projects.css.map */
