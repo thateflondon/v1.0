@@ -1,4 +1,33 @@
 @charset "UTF-8";
+:root {
+  --primary-color: #ededed;
+  --secondary-color: #444444;
+  --third-color: #aaaaaa;
+  --fourth-color: #ffffff;
+}
+
+/* DARK MODE */
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -148,7 +177,7 @@
 
 .icon-handshake-o:before {
   content: "\e91d";
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 .icon-folder-outline:before {
@@ -229,8 +258,8 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: monospace;
   margin: 0;
-  background-color: #ededed;
-  color: #aaaaaa;
+  background-color: var(--primary-color);
+  color: var(--third-color);
   font-size: 15px;
   line-height: 1.5;
 }
@@ -242,7 +271,7 @@ body {
 }
 
 #home-button img {
-  color: #aaaaaa;
+  color: var(--third-color);
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
@@ -268,7 +297,7 @@ body {
 
 .stack-container .about .heading {
   margin: 0 auto;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .stack-container .about .inner {
@@ -286,7 +315,7 @@ body {
   width: 60%;
   text-align: justify;
   line-height: 1.5;
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 .stack-container .about .inner .about-text .skills-list {
@@ -312,7 +341,7 @@ body {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: #444444;
+  color: var(--secondary-color);
   line-height: 1.5;
   font-size: 15px;
 }
@@ -345,14 +374,14 @@ body {
 .timeline .heading {
   margin: 100px auto 0px;
   text-align: center;
-  color: #444444;
+  color: var(--secondary-color);
   max-width: 700px;
   width: 500px;
 }
 
 .timeline-container {
   width: 550px;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid var(--fourth-color);
   max-width: 700px;
   position: relative;
   margin: 20px auto;
@@ -399,9 +428,9 @@ body {
   width: 100%;
   height: 40px;
   padding: 0px 20px 2px;
-  border-left: 2px solid #444444;
+  border-left: 2px solid var(--secondary-color);
   background-color: transparent;
-  color: #444444;
+  color: var(--secondary-color);
   font-family: monospace;
   font-size: 14px;
   text-align: left;
@@ -409,11 +438,11 @@ body {
 }
 
 .timeline-container .tabs .tab:hover {
-  color: #ffffff;
+  color: var(--fourth-color);
 }
 
 .timeline-container .tabs .tab.active {
-  color: #ffffff;
+  color: var(--fourth-color);
 }
 
 .timeline-container .tabs .tab.tab-1.active ~ .highlighter {
@@ -458,7 +487,7 @@ body {
 
 .timeline-container .tabs .highlighter {
   display: block;
-  background: #ffffff;
+  background: var(--fourth-color);
   width: 2px;
   height: 40px;
   position: absolute;
@@ -497,7 +526,7 @@ body {
 }
 
 .timeline-container .content h3 .company {
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .timeline-container .content h3 .company .company-link {
@@ -505,7 +534,7 @@ body {
   text-decoration: none;
   text-decoration-skip-ink: auto;
   position: relative;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .timeline-container .content h3 .company .company-link::after {
@@ -515,7 +544,7 @@ body {
   height: 1px;
   position: relative;
   bottom: 0.37em;
-  background: #aaaaaa;
+  background: var(--third-color);
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   opacity: 0.5;
@@ -561,12 +590,12 @@ body {
 }
 
 .stacks .web-development .heading {
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .stacks .web-development .circular-stacks {
   width: 100%;
-  background-color: #ededed;
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,7 +613,7 @@ body {
   text-transform: uppercase;
   -webkit-animation: spin 14s linear infinite;
           animation: spin 14s linear infinite;
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 @-webkit-keyframes spin {
@@ -617,12 +646,12 @@ body {
 
 .stacks .platforms-tools .one .heading {
   text-align: center;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .stacks .platforms-tools .one .circular-tools {
   width: 100%;
-  background-color: #ededed;
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,7 +667,7 @@ body {
   font-size: 15px;
   -webkit-animation: spinRight 14s linear infinite;
           animation: spinRight 14s linear infinite;
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 @-webkit-keyframes spinRight {
@@ -659,7 +688,7 @@ body {
   font-size: 15px;
   -webkit-animation: spinLeft 14s linear infinite;
           animation: spinLeft 14s linear infinite;
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 @-webkit-keyframes spinLeft {
@@ -689,13 +718,13 @@ body {
 }
 
 .stacks .platforms-tools .two .designs-tools .heading {
-  color: #444444;
+  color: var(--secondary-color);
   text-align: center;
 }
 
 .stacks .platforms-tools .two .designs-tools .circular-tools {
   width: 100%;
-  background-color: #ededed;
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,7 +740,7 @@ body {
   font-size: 15px;
   -webkit-animation: spinlft 14s linear infinite;
           animation: spinlft 14s linear infinite;
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 @-webkit-keyframes spinlft {
@@ -740,7 +769,7 @@ body {
 }
 
 .get-in-touch .mail .heading {
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .get-in-touch .mail .message {
@@ -772,7 +801,7 @@ body {
 .get-in-touch .mail .email-link #coloration:hover::before {
   -webkit-filter: none;
           filter: none;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -789,7 +818,7 @@ body {
 
 .stacks-small-screen .web-development .heading {
   text-align: center;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .stacks-small-screen .web-development .inline-stacks .tech-list {
@@ -804,14 +833,14 @@ body {
   padding: 4px 7px;
   margin: 5px;
   border-radius: 4px;
-  background-color: #ffffff;
-  color: #aaaaaa;
+  background-color: var(--fourth-color);
+  color: var(--third-color);
   font-weight: bold;
 }
 
 .stacks-small-screen .web-development .inline-stacks .tech-list .tech:hover {
-  background-color: #aaaaaa;
-  color: #ffffff;
+  background-color: var(--third-color);
+  color: var(--fourth-color);
 }
 
 .tools-and-platforms-small-screen {
@@ -822,7 +851,7 @@ body {
 
 .tools-and-platforms-small-screen .tools-and-platforms .heading {
   text-align: center;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .tools-and-platforms-small-screen .tools-and-platforms .inline-tools .tools-list {
@@ -872,7 +901,7 @@ body {
 
 .design-tools-small-screen .design-tools .heading {
   text-align: center;
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 .design-tools-small-screen .design-tools .inline-design .design-tools-list {
@@ -932,11 +961,11 @@ footer .copyright {
 }
 
 footer .copyright p {
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 footer .copyright p #year {
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 /* Show or hide the icons depending on width */

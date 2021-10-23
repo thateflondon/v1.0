@@ -1,6 +1,34 @@
-$color1: #ededed;
-$color2: #444444;
-$color3: #aaaaaa;
+:root {
+  --primary-color: #ededed; //var(--primary-color)
+  --secondary-color: #444444; //var(--secondary-color)
+  --third-color: #aaaaaa; //var(--third-color)
+  --fourth-color: #ffffff; //var(--fourth-color)
+}
+
+/* DARK MODE */
+
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
+}
+
+//OS THEME COLOR HANDLE
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
 
 *,
 *:before,
@@ -19,8 +47,8 @@ html {
     -webkit-font-smoothing: antialiased;
     font-family: monospace;
     margin: 0;
-    background-color: $color1;
-    color: $color3;
+    background-color: var(--primary-color);
+    color: var(--third-color);
     font-size: 15px;
     line-height: 1.5;
   }

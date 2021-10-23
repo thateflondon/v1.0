@@ -18,9 +18,17 @@ body {
   background: var(--primary-color);
   font-weight: 400;
   line-height: 1.2rem;
+  transition: ease-in-out 2s;
 }
 
 /* DARK MODE */
+
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
+}
 .theme-color {
   flex: 1;
   text-align: right;
@@ -33,9 +41,20 @@ body {
   margin-top: 15px;
 }
 
-.dark-theme {
-  --primary-color: #444444;
-  --secondary-color: #ededed;
+//OS THEME COLOR HANDLE
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
 }
 
 /* Fonts */

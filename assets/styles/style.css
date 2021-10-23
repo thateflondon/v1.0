@@ -17,9 +17,18 @@ body {
   background: var(--primary-color);
   font-weight: 400;
   line-height: 1.2rem;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
 }
 
 /* DARK MODE */
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
+}
+
 .theme-color {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -37,9 +46,18 @@ body {
   margin-top: 15px;
 }
 
-.dark-theme {
-  --primary-color: #444444;
-  --secondary-color: #ededed;
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
 }
 
 /* Fonts */

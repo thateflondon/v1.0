@@ -1,3 +1,32 @@
+:root {
+  --primary-color: #ededed;
+  --secondary-color: #444444;
+  --third-color: #aaaaaa;
+  --fourth-color: #ffffff;
+}
+
+/* DARK MODE */
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -30,7 +59,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: monospace;
   margin: 0;
-  background-color: #ededed;
+  background-color: var(--primary-color);
 }
 
 #home-button {
@@ -40,7 +69,7 @@ body {
 }
 
 #home-button img {
-  color: #aaaaaa;
+  color: var(--third-color);
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
@@ -90,12 +119,12 @@ body {
 
 .slideshow-container .mySlides1 .project-informations .project-title {
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: var(--third-color);
   font-weight: bold;
 }
 
 .slideshow-container .mySlides1 .project-informations .img-number {
-  color: #aaaaaa;
+  color: var(--third-color);
   font-weight: bold;
 }
 
@@ -106,7 +135,7 @@ body {
 }
 
 .slideshow-container .mySlides1 .project-description .project-description-content {
-  color: #aaaaaa;
+  color: var(--third-color);
   line-height: 1.5;
   text-align: justify;
 }
@@ -140,7 +169,7 @@ body {
 .separation {
   width: 50px;
   height: 50px;
-  border: 2px dashed #aaaaaa;
+  border: 2px dashed var(--third-color);
   background-color: transparent;
   margin-left: auto;
   margin-right: auto;
@@ -187,12 +216,12 @@ body {
 
 .slideshow-container .mySlides2 .project-informations .project-title {
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: var(--third-color);
   font-weight: bold;
 }
 
 .slideshow-container .mySlides2 .project-informations .img-number {
-  color: #aaaaaa;
+  color: var(--third-color);
   font-weight: bold;
 }
 
@@ -203,7 +232,7 @@ body {
 }
 
 .slideshow-container .mySlides2 .project-description .project-description-content {
-  color: #aaaaaa;
+  color: var(--third-color);
   line-height: 1.5;
   text-align: justify;
 }
@@ -270,11 +299,11 @@ footer .copyright {
 }
 
 footer .copyright p {
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 footer .copyright p #year {
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {

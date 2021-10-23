@@ -1,3 +1,32 @@
+:root {
+  --primary-color: #ededed;
+  --secondary-color: #444444;
+  --third-color: #aaaaaa;
+  --fourth-color: #ffffff;
+}
+
+/* DARK MODE */
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -5,7 +34,7 @@ html {
 }
 
 body {
-  background-color: #ededed;
+  background-color: var(--primary-color);
   margin: 0 0 100px;
 }
 
@@ -16,7 +45,7 @@ body {
 }
 
 #home-button img {
-  color: #aaaaaa;
+  color: var(--third-color);
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
@@ -38,7 +67,7 @@ form {
 }
 
 .form-title {
-  color: #444444;
+  color: var(--secondary-color);
   margin-bottom: 50px;
   text-transform: uppercase;
   font-family: system, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
@@ -116,7 +145,7 @@ form {
 }
 
 #fs-frm label {
-  color: #444444;
+  color: var(--secondary-color);
   font-family: monospace;
   cursor: none;
 }
@@ -126,8 +155,8 @@ form {
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-  border-bottom: 1px solid #444444;
-  background-color: #ededed;
+  border-bottom: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 0.75em 1rem;
   margin-bottom: 2.5rem;
 }
@@ -193,7 +222,7 @@ form {
 }
 
 #send:hover {
-  background-color: #ffffff;
+  background-color: var(--fourth-color);
 }
 
 /* address, locale */
@@ -237,11 +266,11 @@ footer .copyright {
 }
 
 footer .copyright p {
-  color: #aaaaaa;
+  color: var(--third-color);
 }
 
 footer .copyright p #year {
-  color: #444444;
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {

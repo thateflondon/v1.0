@@ -1,7 +1,34 @@
-$color1: #ededed;
-$color2: #444444;
-$color3: #aaaaaa;
-$bright: #ffffff;
+:root {
+  --primary-color: #ededed; //var(--primary-color)
+  --secondary-color: #444444; //var(--secondary-color)
+  --third-color: #aaaaaa; //var(--third-color)
+  --fourth-color: #ffffff; //var(--fourth-color)
+}
+
+/* DARK MODE */
+
+.dark-theme {
+  --primary-color: #444444;
+  --secondary-color: #ededed;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
+}
+
+//OS THEME COLOR HANDLE
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
 
 *,
 *:before,
@@ -25,7 +52,7 @@ body {
   margin: 0 auto;
   margin-bottom: 5px;
   img {
-    color: $color3;
+    color: var(--third-color);
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: 0.3s ease-in-out;
@@ -47,7 +74,7 @@ body {
   font-family: system, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   margin: 0 auto;
-  background-color: $color1;
+  background-color: var(--primary-color);
 }
 
 ul,
@@ -61,7 +88,7 @@ svg {
   width: 100%;
   height: 100%;
   &:hover {
-    color: $color2;
+    color: var(--secondary-color);
     fill: currentColor;
   }
 }
@@ -121,18 +148,18 @@ img {
   }
 
   .project-label1 {
-    color: $color3;
+    color: var(--third-color);
     font-family: monospace;
   }
   .project-title1 {
     font-size: 2rem;
     margin: 10px 0 30px;
-    color: $color2;
+    color: var(--secondary-color);
   }
   .project-details1 {
     font-size: 15px;
     line-height: 1.5;
-    color: $color3;
+    color: var(--third-color);
 
     p {
       background-color: #252525;
@@ -149,7 +176,7 @@ img {
 
       li {
         margin-right: 20px;
-        color: $color3;
+        color: var(--third-color);
         font-family: monospace;
       }
     }
@@ -159,8 +186,12 @@ img {
 .project-img1 {
   position: relative;
   z-index: -1;
-  background-color: $color1;
-  background: linear-gradient(0.4turn, $color1, $color3);
+  background-color: var(--primary-color);
+  background: linear-gradient(
+    0.4turn,
+    var(--primary-color),
+    var(--third-color)
+  );
   border-radius: 2px;
   grid-column: 6 / -1;
   grid-row: 1 / -1;
@@ -184,7 +215,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: 3;
-    background-color: $color3;
+    background-color: var(--third-color);
     mix-blend-mode: screen;
     border-radius: 2px;
   }
@@ -233,18 +264,18 @@ img {
   }
 
   .project-label2 {
-    color: $color3;
+    color: var(--third-color);
     font-family: monospace;
   }
   .project-title2 {
     font-size: 2rem;
     margin: 10px 0 30px;
-    color: $color2;
+    color: var(--secondary-color);
   }
   .project-details2 {
     font-size: 15px;
     line-height: 1.5;
-    color: $color3;
+    color: var(--third-color);
 
     p {
       background-color: #252525;
@@ -265,7 +296,7 @@ img {
 
       li {
         margin-right: 20px;
-        color: $color3;
+        color: var(--third-color);
         font-family: monospace;
       }
     }
@@ -275,8 +306,12 @@ img {
 .project-img2 {
   position: relative;
   z-index: -1;
-  background-color: $color1;
-  background: linear-gradient(0.4turn, $color1, $color3);
+  background-color: var(--primary-color);
+  background: linear-gradient(
+    0.4turn,
+    var(--primary-color),
+    var(--third-color)
+  );
   border-radius: 2px;
   grid-column: 1 / 8;
   grid-area: 1 / 8 / -1 / 1;
@@ -301,7 +336,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: 3;
-    background-color: $color2;
+    background-color: var(--secondary-color);
     mix-blend-mode: screen;
     border-radius: 2px;
   }
@@ -325,12 +360,12 @@ img {
   position: relative;
   margin-top: 10px;
   margin-left: -10px;
-  color: $color2;
+  color: var(--secondary-color);
   -webkit-box-pack: end;
   justify-content: flex-end;
 
   a {
-    color: $color2;
+    color: var(--secondary-color);
     padding: 10px;
 
     &.external {
@@ -354,12 +389,12 @@ img {
   position: relative;
   margin-top: 10px;
   margin-left: -10px;
-  color: $color2;
+  color: var(--secondary-color);
   -webkit-box-pack: end;
   justify-content: flex-start;
 
   a {
-    color: $color2;
+    color: var(--secondary-color);
     padding: 10px;
 
     &.external {
@@ -386,7 +421,7 @@ img {
 .top-button {
   width: 50px;
   height: 50px;
-  border: 1px solid $color2;
+  border: 1px solid var(--secondary-color);
   border-radius: 50%;
   position: fixed;
   bottom: 50px;
@@ -403,7 +438,7 @@ img {
   bottom: 50px;
   opacity: 1;
   &:hover {
-    background-color: $bright;
+    background-color: var(--fourth-color);
   }
   @media only screen and (max-width: 768px) {
     display: none;
@@ -427,9 +462,9 @@ footer {
     display: flex;
     justify-content: center;
     p {
-      color: $color3;
+      color: var(--third-color);
       #year {
-        color: $color2;
+        color: var(--secondary-color);
       }
     }
   }
@@ -443,14 +478,14 @@ footer {
     display: grid;
   }
   .project-content2 .project-details2 ul li:hover {
-    color: $color2;
+    color: var(--secondary-color);
   }
 
   .project-content1 .project-details1 ul {
     display: grid;
   }
   .project-content1 .project-details1 ul li:hover {
-    color: $color2;
+    color: var(--secondary-color);
   }
 }
 /* Fix the button according the screen size */
