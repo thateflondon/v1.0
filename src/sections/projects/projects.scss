@@ -9,9 +9,9 @@
 
 .dark-theme {
   --primary-color: #444444;
-  --secondary-color: #ededed;
-  --third-color: #ffffff;
-  --fourth-color: #aaaaaa;
+  --secondary-color: #aaa;
+  // --third-color: #ffffff;
+  // --fourth-color: #aaaaaa;
 }
 
 //OS THEME COLOR HANDLE
@@ -445,14 +445,6 @@ img {
   }
 }
 
-.project-img2 img:hover {
-  display: none;
-}
-
-.project-img1 img:hover {
-  display: none;
-}
-
 //FOOTER
 
 footer {
@@ -503,6 +495,7 @@ footer {
   }
 }
 
+/* Handle Rolly.js rendering */
 [data-scene] {
   margin: auto;
   padding: 10vh 50px;

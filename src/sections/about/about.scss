@@ -745,6 +745,8 @@ body {
 // FOOTER
 
 footer {
+  background-color: red;
+  // height: 200px;
   max-width: 1000px;
   margin: 0 auto;
   font-family: monospace;
@@ -858,6 +860,10 @@ footer {
 }
 [data-scene]:last-of-type {
   margin-bottom: 55.1vh;
+  // margin-top: -200px;
+  // position: -webkit-sticky;
+  // position: sticky;
+  // bottom: 0;
 }
 
 //DISABLE KURSOR DEPENDING ON SCREEN SIZE

@@ -8,9 +8,7 @@
 /* DARK MODE */
 .dark-theme {
   --primary-color: #444444;
-  --secondary-color: #ededed;
-  --third-color: #ffffff;
-  --fourth-color: #aaaaaa;
+  --secondary-color: #aaa;
 }
 
 @media (prefers-color-scheme: light) {
@@ -498,14 +496,6 @@ img {
   }
 }
 
-.project-img2 img:hover {
-  display: none;
-}
-
-.project-img1 img:hover {
-  display: none;
-}
-
 footer {
   font-family: monospace;
   font-size: 15px;
@@ -561,6 +551,7 @@ footer .copyright p #year {
   }
 }
 
+/* Handle Rolly.js rendering */
 [data-scene] {
   margin: auto;
   padding: 10vh 50px;

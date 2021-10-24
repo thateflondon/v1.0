@@ -42,6 +42,12 @@
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
   </head>
   <body>
+    <!-- Night mode -->
+    <div class="theme-color" style="display: none">
+      <!-- Display none because the user made his choice at index and the choice was stored in localStorage  -->
+      <img id="icon" src="../../../assets/images/moon.png" alt="moon" />
+    </div>
+    <!-- Night mode end-->
     <div class="app">
       <!-- home page button  -->
       <div id="home-button" data-scene data-speed="1">
@@ -397,7 +403,7 @@
       <!-- projects end  -->
 
       <!-- Scripts -->
-      <script src="./scripts/theme.js"></script>
+      <script src="../../../scripts/theme.js"></script>
       <script src="../../../scripts/date.js"></script>
       <script src="../../../scripts/smoothScrollToTop.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
