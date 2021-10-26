@@ -417,6 +417,21 @@ img {
   margin-bottom: 50px;
 }
 
+/* Set color on the images on hover */
+.project-img1:hover,
+.project-img2:hover {
+  z-index: 9999;
+  background-color: none;
+}
+
+.project-img1:hover img,
+.project-img2:hover img {
+  background: none;
+  background-color: none;
+  -webkit-filter: none;
+  filter: none;
+}
+
 /* Scroll top smooth */
 .top-button {
   width: 50px;

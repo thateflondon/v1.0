@@ -1047,7 +1047,7 @@ footer .copyright p #year {
 
 [data-scene] {
   margin: 10vh auto;
-  padding: 10vh 50px;
+  padding: 10vh 10px;
 }
 
 [data-scene]:first-of-type {
@@ -1057,6 +1057,7 @@ footer .copyright p #year {
 
 [data-scene]:last-of-type {
   margin-bottom: 55.1vh;
+  bottom: 0 !important;
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {

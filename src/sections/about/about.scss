@@ -851,7 +851,7 @@ footer {
 
 [data-scene] {
   margin: 10vh auto;
-  padding: 10vh 50px;
+  padding: 10vh 10px;
 }
 
 [data-scene]:first-of-type {
@@ -863,7 +863,7 @@ footer {
   // margin-top: -200px;
   // position: -webkit-sticky;
   // position: sticky;
-  // bottom: 0;
+  bottom: 0 !important;
 }
 
 //DISABLE KURSOR DEPENDING ON SCREEN SIZE
