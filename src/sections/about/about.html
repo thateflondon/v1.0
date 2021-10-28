@@ -36,6 +36,10 @@
       rel="stylesheet"
       href="https://unpkg.com/rolly.js@0.2.1/css/style.css"
     /> -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
     <link rel="stylesheet" href="./about.css" />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
   </head>
@@ -66,6 +70,7 @@
       <!-- floating stacks  -->
       <section style="justify-content: center; text-align: center">
         <div
+          class="stack load-hidden"
           id="stack"
           style="display: flex; justify-content: center"
           data-scene
@@ -75,7 +80,7 @@
       <!-- container -->
       <div class="stack-container">
         <!-- about section  -->
-        <section class="about" data-scene data-speed="0.8">
+        <section class="about load-hidden" data-scene data-speed="0.8">
           <div>
             <h2 class="heading">Bonjour!</h2>
             <div class="inner">
@@ -120,7 +125,7 @@
         <!-- about section end  -->
 
         <!-- timeline section  -->
-        <section class="timeline" data-scene data-speed="1.8">
+        <section class="timeline load-hidden" data-scene data-speed="1.8">
           <h2 class="heading">Where I’ve Worked</h2>
           <div class="timeline-container">
             <div class="tabs">
@@ -293,7 +298,6 @@
           </div>
 
           <div class="platforms-tools">
-            <!-- test -->
             <div class="one">
               <h2 class="heading">Tools &nbsp;&&nbsp; Platforms</h2>
               <div class="circular-tools">
@@ -325,7 +329,11 @@
 
         <!----- RESPONSIVE DISPLAY SMALL & MEDIUM SCREENS SECTION  ----->
         <!-- stacks-small-screen -->
-        <section class="stacks-small-screen" data-scene data-speed="2.1">
+        <section
+          class="stacks-small-screen load-hidden"
+          data-scene
+          data-speed="2.1"
+        >
           <div class="web-development">
             <h2 class="heading">Development Stacks</h2>
             <div class="inline-stacks">
@@ -349,7 +357,7 @@
 
         <!-- tools-and-platforms-small-screen -->
         <section
-          class="tools-and-platforms-small-screen"
+          class="tools-and-platforms-small-screen load-hidden"
           data-scene
           data-speed="1.8"
         >
@@ -476,7 +484,11 @@
         <!-- tools-and-platforms-small-screen -->
 
         <!-- design-tools-small-screen  -->
-        <section class="design-tools-small-screen" data-scene data-speed="1.6">
+        <section
+          class="design-tools-small-screen load-hidden"
+          data-scene
+          data-speed="1.6"
+        >
           <div class="design-tools">
             <h2 class="heading">Design</h2>
             <div class="inline-design">
@@ -522,7 +534,7 @@
         <!----- RESPONSIVE DISPLAY SMALL & MEDIUM SCREENS SECTION END ----->
 
         <!-- get in touch section  -->
-        <section class="get-in-touch" data-scene data-speed="1.9">
+        <section class="get-in-touch load-hidden" data-scene data-speed="1.9">
           <div class="mail">
             <h2 class="heading">Get In Touch</h2>
             <p class="message">
@@ -546,7 +558,7 @@
 
       <!-- Footer  -->
 
-      <footer data-scene data-speed="1.8">
+      <footer class="footer load-hidden" data-scene data-speed="1.8">
         <div class="copyright">
           <p>
             Copyright&nbsp;©&nbsp;
@@ -645,6 +657,7 @@
       <script src="../../../scripts/timelineAnimate.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
       <script src="../../../scripts/kursor.js"></script>
+      <script src="../../../scripts/revealOnScroll.js"></script>
       <!-- <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script> -->
       <script src="../../../scripts/detectSmallOrMediumScreens.js"></script>
 

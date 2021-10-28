@@ -243,6 +243,16 @@ body {
   height: 100%;
 }
 
+/* utility */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+/* extension */
+html.sr .tab {
+  visibility: hidden;
+}
+
 body {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
