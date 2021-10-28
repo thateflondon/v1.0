@@ -24,15 +24,3 @@ icon.onclick = function () {
     localStorage.setItem("theme", "light");
   }
 };
-
-// var icon = document.getElementById("icon");
-
-// var champ = document.getElementById("icon");
-
-// if (sessionStorage.getItem("dark-theme")) {
-//   champ.value = sessionStorage.getItem("dark-theme");
-// }
-
-// champ.addEventListener("click", function () {
-//   sessionStorage.setItem("dark-theme", champ.value);
-// });
