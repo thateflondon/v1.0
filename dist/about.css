@@ -934,6 +934,7 @@ body {
 }
 
 footer {
+  background-color: red;
   max-width: 1000px;
   margin: 0 auto;
   font-family: monospace;
@@ -1041,7 +1042,7 @@ footer .copyright p #year {
 }
 [data-scene] {
   margin: 10vh auto;
-  padding: 10vh 50px;
+  padding: 10vh 10px;
 }
 
 [data-scene]:first-of-type {
@@ -1819,6 +1820,7 @@ body {
 }
 
 footer {
+  background-color: red;
   max-width: 1000px;
   margin: 0 auto;
   font-family: monospace;
@@ -1919,7 +1921,7 @@ footer .copyright p #year {
 }
 [data-scene] {
   margin: 10vh auto;
-  padding: 10vh 50px;
+  padding: 10vh 10px;
 }
 
 [data-scene]:first-of-type {
