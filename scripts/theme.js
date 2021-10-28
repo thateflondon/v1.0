@@ -7,20 +7,20 @@ if (window.localStorage.getItem("theme") == null) {
 let localData = window.localStorage.getItem("theme");
 
 if (localData == "light") {
-  icon.src = "assets/images/moon.png";
+  icon.src = "../assets/images/moon.png";
   document.body.classList.remove("dark-theme");
 } else if (localData == "dark") {
-  icon.src = "assets/images/sun.png";
+  icon.src = "../assets/images/sun.png";
   document.body.classList.add("dark-theme");
 }
 
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "assets/images/sun.png";
+    icon.src = "../assets/images/sun.png";
     localStorage.setItem("theme", "dark");
   } else {
-    icon.src = "assets/images/moon.png";
+    icon.src = "../assets/images/moon.png";
     localStorage.setItem("theme", "light");
   }
 };

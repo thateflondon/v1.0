@@ -817,8 +817,11 @@ body {
 }
 
 .get-in-touch .mail .email-link #coloration:hover::before {
+  zoom: 3;
   -webkit-filter: none;
           filter: none;
+  -webkit-transition: all ease-out 1s;
+  transition: all ease-out 1s;
   color: var(--secondary-color);
 }
 
