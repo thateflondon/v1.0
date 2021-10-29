@@ -7,7 +7,7 @@ if (window.localStorage.getItem("theme") == null) {
 let localData = window.localStorage.getItem("theme");
 
 if (localData == "light") {
-  icon.src = "../assets/images/moon.png";
+  icon.src = "V1/assets/images/moon.png";
   document.body.classList.remove("dark-theme");
 } else if (localData == "dark") {
   icon.src = "../assets/images/sun.png";
@@ -20,7 +20,8 @@ icon.onclick = function () {
     icon.src = "../assets/images/sun.png";
     localStorage.setItem("theme", "dark");
   } else {
-    icon.src = "../assets/images/moon.png";
+    icon.src =
+      "/Applications/Ampps/www/FullStack/Projects/portfolio/V1/assets/images/moon.png";
     localStorage.setItem("theme", "light");
   }
 };
