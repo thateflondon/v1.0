@@ -1,6 +1,6 @@
 var icon = document.getElementById("icon");
 
-if (window.localStorage.getItem("theme") == null) {
+if (window.localStorage.getItem("theme") === null) {
   window.localStorage.setItem("theme", "light");
 }
 
