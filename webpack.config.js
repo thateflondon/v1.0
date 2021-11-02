@@ -254,6 +254,7 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: "images/[hash][ext][query]",
   },
   optimization: {
     splitChunks: {
@@ -355,6 +356,16 @@ module.exports = {
       {
         test: /\.(pdf|png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        // use: [
+        //   {
+        //     loader: "file-loader",
+        //     options: {
+        //       name: "[name].[ext]",
+        //       outputPath: "/images/",
+        //       // publicPath: "/dist/assets/images/",
+        //     },
+        //   },
+        // ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
