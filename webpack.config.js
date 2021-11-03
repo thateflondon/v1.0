@@ -325,6 +325,7 @@ module.exports = {
         // Helps to dynamicaly handle img change in dark mode function
         { from: "./assets/images/moon.png", to: "images" },
         { from: "./assets/images/sun.png", to: "images" },
+        { from: "./assets/images/profile/resume/resume-FR.pdf", to: "images" },
       ],
     }),
   ],

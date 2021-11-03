@@ -16,7 +16,6 @@ body {
   margin: 0;
   text-align: center;
   background: var(--primary-color);
-  // color: var(--primary-color);
   font-weight: 400;
   line-height: 1.2rem;
   transition: ease-in-out 2s;
@@ -27,11 +26,10 @@ body {
 .dark-theme {
   --primary-color: #444444;
   --secondary-color: #ededed;
-  // --third-color: #ffffff;
-  // --fourth-color: #aaaaaa;
+  --third-color: #ffffff;
+  --fourth-color: #aaaaaa;
 }
 .theme-color {
-  // position: relative;
   flex: 1;
   text-align: right;
   width: 95%;
