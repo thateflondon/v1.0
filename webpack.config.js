@@ -355,12 +355,12 @@ module.exports = {
       },
       {
         test: /\.(pdf|png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        type: "asset",
         // use: [
         //   {
         //     loader: "file-loader",
         //     options: {
-        //       name: "[name].[ext]",
+        //       // name: "[name].[ext]",
         //       outputPath: "/images/",
         //       // publicPath: "/dist/assets/images/",
         //     },
