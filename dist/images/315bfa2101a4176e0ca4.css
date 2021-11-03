@@ -5,38 +5,10 @@
   --fourth-color: #ffffff;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
-}
-
 /* DARK MODE */
 .dark-theme {
   --primary-color: #444444;
   --secondary-color: #aaa;
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
 }
 
 *,

@@ -22,20 +22,6 @@
   fill: #ededed;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
-}
-
 *,
 *:before,
 *:after {
