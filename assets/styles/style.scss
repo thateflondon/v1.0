@@ -186,6 +186,9 @@ a:active {
   margin: 10px;
   font-size: 1em;
   text-align: left;
+  p {
+    color: var(--secondary-color);
+  }
 }
 
 /* Responsive */
