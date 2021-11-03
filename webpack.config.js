@@ -322,9 +322,9 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./assets/images", to: "images" },
-        // { from: "./assets/images/moon.png", to: "public" },
-        // { from: "./assets/images/sun.png", to: "public" },
+        // { from: "./assets/images", to: "images" },
+        { from: "./assets/images/moon.png", to: "images" },
+        { from: "./assets/images/sun.png", to: "images" },
       ],
     }),
   ],
