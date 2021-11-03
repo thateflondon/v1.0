@@ -241,6 +241,7 @@ const { basename } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
@@ -319,6 +320,12 @@ module.exports = {
       inject: (htmlPlugin) =>
         basename(htmlPlugin.options.filename) === "projects.html",
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./assets/images", to: "images" },
+        // { from: "other", to: "public" },
+      ],
+    }),
   ],
 
   module: {
@@ -358,8 +365,9 @@ module.exports = {
         type: "asset",
         // use: [
         //   {
-        //     loader: "file-loader",
+        //     // loader: "file-loader",
         //     options: {
+        //       limit: 8000,
         //       // name: "[name].[ext]",
         //       outputPath: "/images/",
         //       // publicPath: "/dist/assets/images/",
