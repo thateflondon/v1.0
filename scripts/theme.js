@@ -1,15 +1,3 @@
-// import moonImage from "../assets/images/moon.png";
-// import sunImage from "../assets/images/sun.png";
-
-// var moonImg = document.getElementsByClassName("themeBtn");
-// moonImg.src = moonImage;
-
-// var sunImg = document.getElementsByClassName("themeBtn");
-// sunImg.src = sunImage;
-
-// img.src = moonImage;
-// img.src = sunImage;
-
 var icon = document.getElementById("icon");
 
 if (window.localStorage.getItem("theme") == null) {
@@ -19,24 +7,20 @@ if (window.localStorage.getItem("theme") == null) {
 let localData = window.localStorage.getItem("theme");
 
 if (localData == "light") {
-  icon.src = "../dist/images/moon.png";
-  // icon.src = moonImage;
+  icon.src = "/dist/images/moon.png";
   document.body.classList.remove("dark-theme");
 } else if (localData == "dark") {
-  icon.src = "../dist/images/moon.png";
-  // icon.src = moonImage;
+  icon.src = "/dist/images/moon.png";
   document.body.classList.add("dark-theme");
 }
 
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "../dist/images/sun.png";
-    // icon.src = sunImage;
+    icon.src = "/dist/images/sun.png";
     localStorage.setItem("theme", "dark");
   } else {
-    icon.src = "../dist/images/moon.png";
-    // icon.src = moonImage;
+    icon.src = "/dist/images/moon.png";
     localStorage.setItem("theme", "light");
   }
 };
