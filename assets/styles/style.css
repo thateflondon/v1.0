@@ -46,14 +46,14 @@ body {
   margin-top: 15px;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -230,6 +230,20 @@ a:active {
     display: block;
     position: absolute;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media only screen and (max-width: 800px) and (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 }
 

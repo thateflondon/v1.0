@@ -322,7 +322,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        // { from: "./assets/images", to: "images" },
+        // Helps to dynamicaly handle img change in dark mode function
         { from: "./assets/images/moon.png", to: "images" },
         { from: "./assets/images/sun.png", to: "images" },
       ],
