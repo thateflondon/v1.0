@@ -7,6 +7,22 @@
 
 //OS THEME COLOR HANDLE
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
+
+//OS THEME COLOR HANDLE
+
 // @media (prefers-color-scheme: light) {
 //   body {
 //     background-color: var(--primary-color);
@@ -67,22 +83,6 @@ body {
 //   position: absolute;
 //   visibility: hidden;
 // }
-
-//OS THEME COLOR HANDLE
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
-}
 
 /* Fonts */
 
@@ -251,19 +251,19 @@ a:active {
     position: absolute;
     width: 100%;
   }
-  @media (prefers-color-scheme: light) {
-    body {
-      background-color: var(--primary-color);
-      color: var(--secondary-color);
-    }
-  }
+  // @media (prefers-color-scheme: light) {
+  //   body {
+  //     background-color: var(--primary-color);
+  //     color: var(--secondary-color);
+  //   }
+  // }
 
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
-    }
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   body {
+  //     background-color: var(--secondary-color);
+  //     color: var(--primary-color);
+  //   }
+  // }
 }
 
 //DISABLE KURSOR DEPENDING ON SCREEN SIZE
