@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #ededed; //var(--primary-color)
-  --secondary-color: #444444; //var(--secondary-color)
-  --third-color: #aaaaaa; //var(--third-color)
-  --fourth-color: #ffffff; //var(--fourth-color)
+  --primary-color: #ededed;
+  --secondary-color: #444444;
+  --third-color: #aaaaaa;
+  --fourth-color: #ffffff;
 }
 
 $spacing: 20px;
@@ -22,22 +22,6 @@ $tab-height: 40px;
     fill: rgb(237, 237, 237);
   }
 }
-
-//OS THEME COLOR HANDLE
-
-// @media (prefers-color-scheme: light) {
-//   body {
-//     background-color: var(--primary-color);
-//     color: var(--secondary-color);
-//   }
-// }
-
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     background-color: var(--secondary-color);
-//     color: var(--primary-color);
-//   }
-// }
 
 *,
 *:before,
