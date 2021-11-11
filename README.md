@@ -22,19 +22,16 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 
 <div align="center">
 <h3>Stacks</h3>
-<ul>
-<li>VS Code</li>
-<li>HTML</li>
-<li>SASS</li>
-<li>NODE JS</li>
-<li>ES6</li>
-<li>JQUERY</li>
-<li>WEBPACK</li>
-</ul>
 </div>
 
 <div align="center">
-<h3>Stacks</h3>
+VS Code
+HTML
+SASS
+NODE JS
+ES6
+JQUERY
+WEBPACK
 </div>
 
 - VS Code
