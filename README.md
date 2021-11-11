@@ -25,13 +25,13 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 </div>
 
 <div align="center">
-VS Code
-HTML
-SASS
-NODE JS
-ES6
-JQUERY
-WEBPACK
+<p>VS Code</p>
+<p>HTML</p>
+<p>SASS</p>
+<p>NODE JS</p>
+<p>ES6</p>
+<p>JQUERY</p>
+<p>WEBPACK</p>
 </div>
 
 - VS Code
