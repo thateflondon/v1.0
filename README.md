@@ -3,6 +3,10 @@
 </div>
 
 <div align="center">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0cfda704-c61d-425f-9fa7-bf56516934b0/deploy-status)](https://app.netlify.com/sites/jfpl/deploys)
+</div>
+
+<div align="center">
 <img alt="logo" src="https://github.com/thateflondon/v1.0/blob/e9e31440ddd9a82d4ced3ab416a566b936d47e4b/assets/images/logo.png" width="50" height="50"/>
 </div>
 
@@ -35,7 +39,7 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 </div>
 
 <div align="center">
-<h3>Dependencies</h3>
+<h3>Dependencies:</h3>
 </div>
 
 <div align="center">
@@ -56,7 +60,7 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 </div>
 
 <div align="center">
-<h3>DevDependencies</h3>
+<h3>DevDependencies:</h3>
 </div>
 
 <div align="center">
@@ -86,29 +90,3 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 <p>webpack-cli</p>
 <p>webpack-dev-server</p>
 </div>
-
-- @babel/core
-- @babel/preset-env
-- @babel/preset-react
-- @squoosh/lib
-- babel-loader
-- clean-webpack-plugin
-- copy-webpack-plugin
-- css-loader
-- favicons
-- favicons-webpack-plugin
-- html-loader
-- html-webpack-plugin
-- image-minimizer-webpack-plugin
-- imagemin-gifsicle
-- imagemin-jpegtran
-- imagemin-optipng
-- imagemin-svgo
-- mini-css-extract-plugin
-- sass
-- sass-loader
-- style-loader
-- url-loader
-- webpack
-- webpack-cli
-- webpack-dev-server
