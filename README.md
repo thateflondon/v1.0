@@ -34,30 +34,26 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 <p>WEBPACK</p>
 </div>
 
-- VS Code
-- HTML
-- SASS
-- NODE JS
-- ES6
-- JQUERY
-- WEBPACK
+<div align="center">
+<h3>Dependencies</h3>
+</div>
 
-### Dependencies
-
-- bootstrap
-- common-config-webpack-plugin
-- css-minimizer-webpack-plugin
-- csv-loader
-- file-loader
-- imagemin
-- jquery
-- kursor
-- lodash
-- path
-- rolly.js
-- scrollreveal
-- svgo
-- xml-loader
+<div align="center">
+<p>bootstrap</p>
+<p>common-config-webpack-plugin</p>
+<p>css-minimizer-webpack-plugin</p>
+<p>csv-loader</p>
+<p>file-loader</p>
+<p>imagemin</p>
+<p>jquery</p>
+<p>kursor</p>
+<p>lodash</p>
+<p>path</p>
+<p>rolly.js</p>
+<p>scrollreveal</p>
+<p>svgo</p>
+<p>xml-loader</p>
+</div>
 
 ### DevDependencies
 
