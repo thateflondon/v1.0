@@ -1,4 +1,9 @@
-# PERSONAL PORTFOLIO
+<div align="center">
+<h1>JFPL.FR</h1>
+</div>
+<div align="center">
+<img alt="logo" src="https://raw.githubusercontent.com/thateflondon/v1.0/assets/images/logo.png"/>
+</div>
 
 ## DESCRIPTION
 
@@ -60,5 +65,3 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 - webpack
 - webpack-cli
 - webpack-dev-server
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0cfda704-c61d-425f-9fa7-bf56516934b0/deploy-status)](https://app.netlify.com/sites/jfpl/deploys)
