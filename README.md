@@ -3,12 +3,18 @@
 </div>
 
 <div align="center">
-<img alt="logo" src="https://github.com/thateflondon/v1.0/blob/e9e31440ddd9a82d4ced3ab416a566b936d47e4b/assets/images/logo.png" width="100" height="100"/>
+<img alt="logo" src="https://github.com/thateflondon/v1.0/blob/e9e31440ddd9a82d4ced3ab416a566b936d47e4b/assets/images/logo.png" width="50" height="50"/>
 </div>
 
-## DESCRIPTION
+<div align="center">
+<h1>DESCRIPTION</h1>
+</div>
 
 This project is my personal portfolio made from scratch. The purpose here is of course to showcase my abilities as a Junior Developer.
+
+<div align="center">
+<img alt="demo" src="https://github.com/thateflondon/v1.0/blob/a7799c21dcf86e9fb956f42c269d0e371919f1a3/assets/images/demo.png"/>
+</div>
 
 ## TECHNOLOGIES
 
