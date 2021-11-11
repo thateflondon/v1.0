@@ -1,5 +1,5 @@
 <div align="center">
-<h1>[JFPL.FR](https://www.jfpl.fr)</h1>
+[JFPL.FR](https://www.jfpl.fr)
 </div>
 
 <p align="center">
