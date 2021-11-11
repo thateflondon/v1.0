@@ -55,7 +55,37 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 <p>xml-loader</p>
 </div>
 
-### DevDependencies
+<div align="center">
+<h3>DevDependencies</h3>
+</div>
+
+<div align="center">
+<p>@babel/core</p>
+<p>@babel/preset-env</p>
+<p>@babel/preset-react</p>
+<p>@squoosh/lib</p>
+<p>babel-loader</p>
+<p>clean-webpack-plugin</p>
+<p>copy-webpack-plugin</p>
+<p>css-loader</p>
+<p>favicons</p>
+<p>favicons-webpack-plugin</p>
+<p>html-loader</p>
+<p>html-webpack-plugin</p>
+<p>image-minimizer-webpack-plugin</p>
+<p>imagemin-gifsicle</p>
+<p>imagemin-jpegtran</p>
+<p>imagemin-optipng</p>
+<p>imagemin-svgo</p>
+<p>mini-css-extract-plugin</p>
+<p>sass</p>
+<p>sass-loader</p>
+<p>style-loader</p>
+<p>url-loader</p>
+<p>webpack</p>
+<p>webpack-cli</p>
+<p>webpack-dev-server</p>
+</div>
 
 - @babel/core
 - @babel/preset-env
