@@ -1,11 +1,9 @@
 <div align="center">
-<a href="www.jfpl.fr">
 <h1>JFPL.FR</h1>
-</a>
 </div>
 
 <div align="center">
-<img alt="logo" src="https://raw.githubusercontent.com/thateflondon/v1.0/assets/images/logo.png"/>
+<img alt="logo" src="https://github.com/thateflondon/v1.0/blob/e9e31440ddd9a82d4ced3ab416a566b936d47e4b/assets/images/logo.png"/>
 </div>
 
 ## DESCRIPTION
