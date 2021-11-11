@@ -2,9 +2,11 @@
 <h1>JFPL.FR</h1>
 </div>
 
-<div align="center">
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0cfda704-c61d-425f-9fa7-bf56516934b0/deploy-status)](https://app.netlify.com/sites/jfpl/deploys)
-</div>
+<p align="center">
+  <a href="https://app.netlify.com/sites/jfpl/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/0cfda704-c61d-425f-9fa7-bf56516934b0/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
 <div align="center">
 <img alt="logo" src="https://github.com/thateflondon/v1.0/blob/e9e31440ddd9a82d4ced3ab416a566b936d47e4b/assets/images/logo.png" width="50" height="50"/>
