@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-<h1>DESCRIPTION</h1>
+<h2>DESCRIPTION</h2>
 </div>
 
 This project is my personal portfolio made from scratch. The purpose here is of course to showcase my abilities as a Junior Developer.
@@ -16,9 +16,26 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 <img alt="demo" src="https://github.com/thateflondon/v1.0/blob/a7799c21dcf86e9fb956f42c269d0e371919f1a3/assets/images/demo.png"/>
 </div>
 
-## TECHNOLOGIES
+<div align="center">
+<h2>TECHNOLOGIES</h2>
+</div>
 
-### Stacks
+<div align="center">
+<h3>Stacks</h3>
+<ul>
+<li>VS Code</li>
+<li>HTML</li>
+<li>SASS</li>
+<li>NODE JS</li>
+<li>ES6</li>
+<li>JQUERY</li>
+<li>WEBPACK</li>
+</ul>
+</div>
+
+<div align="center">
+<h3>Stacks</h3>
+</div>
 
 - VS Code
 - HTML
