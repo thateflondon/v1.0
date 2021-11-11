@@ -1,6 +1,4 @@
-<div align="center">
 [JFPL.FR](https://www.jfpl.fr)
-</div>
 
 <p align="center">
   <a href="https://app.netlify.com/sites/jfpl/deploys" target="_blank">
