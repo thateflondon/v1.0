@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-<img alt="logo" src="https://github.com/thateflondon/v1.0/blob/e9e31440ddd9a82d4ced3ab416a566b936d47e4b/assets/images/logo.png"/>
+<img alt="logo" src="https://github.com/thateflondon/v1.0/blob/e9e31440ddd9a82d4ced3ab416a566b936d47e4b/assets/images/logo.png" width="100" height="100"/>
 </div>
 
 ## DESCRIPTION
