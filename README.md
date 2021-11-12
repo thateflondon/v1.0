@@ -31,6 +31,7 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 </div>
 
 <div align="center">
+[VS Code](https://code.visualstudio.com/)
 <p>VS Code</p>
 <p>HTML</p>
 <p>SASS</p>
