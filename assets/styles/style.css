@@ -5,6 +5,11 @@
   --fourth-color: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
@@ -21,6 +26,19 @@ body {
   transition: ease-in-out 2s;
 }
 
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
 /* DARK MODE */
 .dark-theme {
   --primary-color: #444444;
@@ -30,9 +48,6 @@ body {
 }
 
 .theme-color {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   text-align: right;
   width: 95%;
 }
@@ -42,8 +57,28 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-align: right;
   margin-top: 15px;
+  position: absolute;
+  top: 0;
+}
+
+/* LOADER  */
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #444444;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  font-family: monospace;
 }
 
 /* Fonts */

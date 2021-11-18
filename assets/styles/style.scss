@@ -5,6 +5,11 @@
   --fourth-color: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
@@ -21,6 +26,13 @@ body {
   transition: ease-in-out 2s;
 }
 
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 /* DARK MODE */
 
 .dark-theme {
@@ -30,15 +42,51 @@ body {
   --fourth-color: #aaaaaa;
 }
 .theme-color {
-  flex: 1;
+  // flex: 1;
   text-align: right;
   width: 95%;
 }
 #icon {
   width: 25px;
   flex: 1;
-  text-align: right;
+  // text-align: right;
   margin-top: 15px;
+  position: absolute;
+  top: 0;
+}
+
+/* LOADER  */
+
+.loader-wrapper {
+  // display: flex;
+  // border: 2px solid #444444;
+  // width: 50px;
+  // height: 50px;
+  // border-radius: 50%;
+  // position: absolute;
+  // margin: auto;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // // text-align: center;
+  // justify-content: center;
+  // align-items: center;
+  // // width: 100 px;
+  // // height: 100 px;
+  // font-family: monospace;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #444444;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  font-family: monospace;
 }
 
 /* Fonts */
