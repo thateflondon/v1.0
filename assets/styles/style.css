@@ -151,6 +151,10 @@ a:active {
   width: 300px;
 }
 
+.circle-menu .cm-link {
+  margin-left: 13.5px;
+}
+
 .menuItem a {
   font-size: 1em;
   color: var(--secondary-color);
