@@ -81,7 +81,8 @@ body {
           align-items: center;
   height: 45px;
   width: 45px;
-  border: 2px solid #444444;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-style: dotted;
   margin-bottom: 50px;
   border-radius: 50px;

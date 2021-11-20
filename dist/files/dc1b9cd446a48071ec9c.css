@@ -5,6 +5,11 @@
   --fourth-color: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
@@ -30,11 +35,9 @@ body {
 }
 
 .theme-color {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   text-align: right;
   width: 95%;
+  margin-right: 15px;
 }
 
 #icon {
@@ -42,8 +45,120 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-align: right;
   margin-top: 15px;
+  position: absolute;
+  top: 0;
+}
+
+/* LOADER  */
+#app {
+  visibility: hidden;
+}
+
+#preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 46vh;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  width: 45px;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-style: dotted;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  font-family: monospace;
+  font-size: 25px;
+  -webkit-animation: rotate 1.5s linear;
+          animation: rotate 1.5s linear;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(6turn);
+            transform: rotate(6turn);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(6turn);
+            transform: rotate(6turn);
+  }
+}
+
+.disappear {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  animation: fadeOut linear 0.3s;
+  -webkit-animation: fadeOut linear 0.3s;
+  -moz-animation: fadeOut linear 0.3s;
+  -o-animation: fadeOut linear 0.3s;
+  -ms-animation: fadeOut linear 0.3s;
+  visibility: hidden;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.appear {
+  animation: fadeIn linear 4.5s;
+  -webkit-animation: fadeIn linear 4.5s;
+  -moz-animation: fadeIn linear 4.5s;
+  -o-animation: fadeIn linear 4.5s;
+  -ms-animation: fadeIn linear 4.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Fonts */
@@ -149,6 +264,10 @@ a:active {
 
 .circle-menu {
   width: 300px;
+}
+
+.circle-menu .cm-link {
+  margin-left: 19.5px;
 }
 
 .menuItem a {
