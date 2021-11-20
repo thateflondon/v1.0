@@ -26,19 +26,6 @@ body {
   transition: ease-in-out 2s;
 }
 
-#app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-}
-
 /* DARK MODE */
 .dark-theme {
   --primary-color: #444444;
@@ -64,9 +51,22 @@ body {
 }
 
 /* LOADER  */
-.loader-wrapper {
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+#app {
+  visibility: hidden;
+}
+
+#preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 46vh;
 }
 
 .loader {
@@ -87,13 +87,77 @@ body {
   border-radius: 50px;
   font-family: monospace;
   font-size: 25px;
+  -webkit-animation: rotate 1.5s linear;
+          animation: rotate 1.5s linear;
 }
 
-.loader:hover {
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-  -webkit-transform: rotate(3turn);
-          transform: rotate(3turn);
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(6turn);
+            transform: rotate(6turn);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(6turn);
+            transform: rotate(6turn);
+  }
+}
+
+.disappear {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  animation: fadeOut linear 0.3s;
+  -webkit-animation: fadeOut linear 0.3s;
+  -moz-animation: fadeOut linear 0.3s;
+  -o-animation: fadeOut linear 0.3s;
+  -ms-animation: fadeOut linear 0.3s;
+  visibility: hidden;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.appear {
+  animation: fadeIn linear 4.5s;
+  -webkit-animation: fadeIn linear 4.5s;
+  -moz-animation: fadeIn linear 4.5s;
+  -o-animation: fadeIn linear 4.5s;
+  -ms-animation: fadeIn linear 4.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Fonts */
