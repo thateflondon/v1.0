@@ -1,1 +1,0 @@
-var app=document.getElementById("app"),responsive=document.getElementById("projects-list-home"),loader=document.getElementById("preloader");window.onload=function(){setTimeout((function(){app.style.visibility="visible",loader.classList.add("disappear"),app.classList.add("appear")}),3e3)};
