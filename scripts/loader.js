@@ -9,12 +9,4 @@ window.onload = function () {
     loader.classList.add("disappear");
     app.classList.add("appear");
   }
-  if (sessionStorage.getItem("dontLoad") == null) {
-    alert("This message will be shown only once when we use this window.");
-    sessionStorage.setItem("dontLoad", "true");
-  }
 };
-// if (sessionStorage.getItem("dontLoad") == null) {
-//   alert("This message will be shown only once when we use this window.");
-//   sessionStorage.setItem("dontLoad", "true");
-// }
