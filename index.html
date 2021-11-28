@@ -322,21 +322,21 @@
 
     <!-- scripts -->
     <script>
-      $(document).ready(function () {
-        function Preloader() {
-          var preloader = $(".preloader");
-          preloader.show();
-          preloader.delay(1000).fadeOut(500);
-        }
-        if (!sessionStorage.getItem("doNotShow")) {
-          sessionStorage.setItem("doNotShow", true);
-          Preloader();
-        } else {
-          $(".preloader").hide();
-        }
-      });
+      // $(document).ready(function () {
+      //   function Preloader() {
+      //     var preloader = $(".preloader");
+      //     preloader.show();
+      //     preloader.delay(1000).fadeOut(500);
+      //   }
+      //   if (!sessionStorage.getItem("doNotShow")) {
+      //     sessionStorage.setItem("doNotShow", true);
+      //     Preloader();
+      //   } else {
+      //     $(".preloader").hide();
+      //   }
+      // });
     </script>
-    <!-- <script src="./scripts/loader.js"></script> -->
+    <script src="./scripts/loader.js"></script>
     <script src="./scripts/theme.js"></script>
     <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/animation.js"></script>
