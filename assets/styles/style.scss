@@ -56,16 +56,20 @@ body {
 }
 
 #preloader {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 46vh;
+  // top: 46vh;
+  // top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 4.5s ease;
 }
 
-.preloader {
-  display: none;
-}
+// .preloader {
+//   display: none;
+// }
 
 .loader {
   display: flex;
@@ -195,6 +199,11 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.preload-done {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Fonts */
