@@ -35,10 +35,47 @@
 
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"
+      integrity="sha512-Meww2sXqNHxI1+5Dyh/9KAtvI9RZSA4c1K2k5iL02oiPO/RH3Q30L3M1albtqMg50u4gRTYdV4EXOQqXEI336A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script> -->
+    <!-- <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM entièrement chargé et analysé");
+        const pageWrapper = document.getElementById("app");
+        const loadingWrapper = document.getElementById("preloader");
+
+        // const seenAnimation = Cookies.get("name", "seenAnimation");
+        Cookies.get("seenAnimation", "true");
+
+        if (!seenAnimation) {
+          // loadingWrapper.style.visibility = "visible";
+          loadingWrapper.style.display = "flex";
+
+          setTimeout(() => {
+            pageWrapper.style.visibility = "visible";
+            loadingWrapper.classList.add("disappear");
+          }, 3000);
+          Cookies.set("seenAnimation", "true", { expires: 1 });
+        } else {
+          loadingWrapper.style.visibility = "hidden";
+          pageWrapper.style.display = "block";
+        }
+      });
+    </script> -->
   </head>
   <body>
     <!----- APP  ----->
-    <div id="preloader" class="preloader">
+    <div id="preloader">
       <div class="loader-wrapper">
         <p class="loader">JF</p>
       </div>
@@ -321,21 +358,14 @@
     <!----- APP END  ----->
 
     <!-- scripts -->
-    <script>
-      // $(document).ready(function () {
-      //   function Preloader() {
-      //     var preloader = $(".preloader");
-      //     preloader.show();
-      //     preloader.delay(1000).fadeOut(500);
-      //   }
-      //   if (!sessionStorage.getItem("doNotShow")) {
-      //     sessionStorage.setItem("doNotShow", true);
-      //     Preloader();
-      //   } else {
-      //     $(".preloader").hide();
-      //   }
-      // });
-    </script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"
+      integrity="sha512-Meww2sXqNHxI1+5Dyh/9KAtvI9RZSA4c1K2k5iL02oiPO/RH3Q30L3M1albtqMg50u4gRTYdV4EXOQqXEI336A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
     <script src="./scripts/loader.js"></script>
     <script src="./scripts/theme.js"></script>
     <script src="./scripts/jquery.min.js"></script>
