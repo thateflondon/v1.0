@@ -1,5 +1,4 @@
-// Cookies.set("eat", "true");
-
+// Set cookie
 window.addEventListener("DOMContentLoaded", (event) => {
   const pageWrapper = document.getElementById("app");
   const loadingWrapper = document.getElementById("preloader");
