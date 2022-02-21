@@ -211,9 +211,16 @@ module.exports = {
   },
 
   // required if using webpack-dev-server
+  // devServer: {
+  //   contentBase: path.join(__dirname, "dist"),
+  //   port: 9000,
+  //   hot: true,
+  // },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    compress: true,
     port: 9000,
-    hot: true,
   },
 };
