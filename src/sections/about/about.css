@@ -139,9 +139,9 @@
   color: #21759b;
 }
 
-.icon-prismic:before {
-  content: "\e917";
-  color: #484a7a;
+.icon-graphql:before {
+  content: "\e928";
+  color: #e10098;
 }
 
 .icon-heroku:before {
@@ -170,7 +170,7 @@
 }
 
 .icon-handshake-o:before {
-  content: "\e91d";
+  content: "\e929";
   color: var(--third-color);
 }
 
