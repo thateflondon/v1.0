@@ -363,6 +363,25 @@ a:active {
   }
 }
 
+/* Cookie Consent */
+
+.cookie__container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+}
+
+.cookie__consent-modal {
+  background-color: green;
+}
+
+.content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 800px) {
