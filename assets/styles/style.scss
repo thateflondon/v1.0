@@ -392,7 +392,7 @@ a:active {
 
 .buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 0.5em;
   .button__cancel {
     border: 1px solid var(--primary-color);
