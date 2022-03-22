@@ -337,10 +337,19 @@ a:active {
 }
 
 /* Cookie Consent */
+.cookie__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .cookie__consent-modal {
   background-color: var(--fourth-color);
   position: absolute;
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,8 +357,6 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
   bottom: 10px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .content {
@@ -364,6 +371,20 @@ a:active {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 0.5em;
+}
+
+.buttons .button__cancel {
+  border: 1px solid var(--primary-color);
+  padding: 0.1em 0.5em;
+  width: 50px;
+  margin-right: 1em;
+}
+
+.buttons .button__accept {
+  border: 1px solid var(--primary-color);
+  padding: 0.1em 0.5em;
+  width: 50px;
 }
 
 /* Responsive */

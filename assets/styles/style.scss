@@ -366,21 +366,23 @@ a:active {
 /* Cookie Consent */
 
 .cookie__container {
+  display: flex;
+  justify-content: center;
   // position: absolute;
   // width: 100%;
-  // display: flex;
-  // justify-content: center;
   // bottom: 10px;
+  // text-align: center;
 }
 
 .cookie__consent-modal {
   background-color: var(--fourth-color);
   position: absolute;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   bottom: 10px;
-  flex-wrap: wrap;
+
+  // flex-wrap: wrap;
 }
 
 .content {
@@ -391,6 +393,18 @@ a:active {
 .buttons {
   display: flex;
   justify-content: flex-end;
+  margin-top: 0.5em;
+  .button__cancel {
+    border: 1px solid var(--primary-color);
+    padding: 0.1em 0.5em;
+    width: 50px;
+    margin-right: 1em;
+  }
+  .button__accept {
+    border: 1px solid var(--primary-color);
+    padding: 0.1em 0.5em;
+    width: 50px;
+  }
 }
 
 /* Responsive */
