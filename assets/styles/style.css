@@ -357,6 +357,7 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
   bottom: 10px;
+  border-radius: 50px;
 }
 
 .content {
@@ -371,20 +372,40 @@ a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 0.5em;
+  margin-top: 1.2em;
 }
 
 .buttons .button__cancel {
   border: 1px solid var(--primary-color);
-  padding: 0.1em 0.5em;
+  padding: 0.2em 0.5em;
   width: 50px;
   margin-right: 1em;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: var(--third-color);
+}
+
+.buttons .button__cancel:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .buttons .button__accept {
   border: 1px solid var(--primary-color);
-  padding: 0.1em 0.5em;
+  padding: 0.2em 0.5em;
   width: 50px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+
+.buttons .button__accept:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* Responsive */

@@ -381,8 +381,7 @@ a:active {
   display: flex;
   justify-content: center;
   bottom: 10px;
-
-  // flex-wrap: wrap;
+  border-radius: 50px;
 }
 
 .content {
@@ -393,17 +392,34 @@ a:active {
 .buttons {
   display: flex;
   justify-content: center;
-  margin-top: 0.5em;
+  margin-top: 1.2em;
+
   .button__cancel {
     border: 1px solid var(--primary-color);
-    padding: 0.1em 0.5em;
+    padding: 0.2em 0.5em;
     width: 50px;
     margin-right: 1em;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: var(--third-color);
+    &:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
   }
   .button__accept {
     border: 1px solid var(--primary-color);
-    padding: 0.1em 0.5em;
+    padding: 0.2em 0.5em;
     width: 50px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    &:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
   }
 }
 
