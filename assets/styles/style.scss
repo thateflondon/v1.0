@@ -368,6 +368,7 @@ a:active {
 .cookie__container {
   display: flex;
   justify-content: center;
+  font-family: monospace;
   // position: absolute;
   // width: 100%;
   // bottom: 10px;
@@ -377,16 +378,20 @@ a:active {
 .cookie__consent-modal {
   background-color: var(--fourth-color);
   position: absolute;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  bottom: 10px;
-  border-radius: 50px;
+  bottom: 0.6em;
+  // border-radius: 50px;
 }
 
 .content {
   padding-top: 10px;
   padding-bottom: 10px;
+  // width: 30%;
+  p {
+    text-align: justify;
+  }
 }
 
 .buttons {

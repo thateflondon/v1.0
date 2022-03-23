@@ -344,25 +344,29 @@ a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: monospace;
 }
 
 .cookie__consent-modal {
   background-color: var(--fourth-color);
   position: absolute;
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: 10px;
-  border-radius: 50px;
+  bottom: 0.6em;
 }
 
 .content {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.content p {
+  text-align: justify;
 }
 
 .buttons {
