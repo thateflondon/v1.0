@@ -349,7 +349,6 @@ a:active {
   font-family: monospace;
   width: 100%;
   height: 100%;
-  background-color: aqua;
 }
 
 .cookie__consent-modal {
@@ -363,6 +362,7 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
   bottom: 0.6em;
+  border-radius: 5px;
 }
 
 .content {
