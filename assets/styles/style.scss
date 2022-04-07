@@ -13,12 +13,12 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 /* Home Page */
 
 body {
-  margin: 0;
   text-align: center;
   background: var(--primary-color);
   font-weight: 400;
@@ -370,7 +370,9 @@ a:active {
   justify-content: center;
   font-family: monospace;
   // position: absolute;
-  // width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
   // bottom: 10px;
   // text-align: center;
 }
@@ -378,7 +380,7 @@ a:active {
 .cookie__consent-modal {
   background-color: var(--fourth-color);
   position: absolute;
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: center;
   bottom: 0.6em;
@@ -391,6 +393,7 @@ a:active {
   // width: 30%;
   p {
     text-align: justify;
+    padding: 15px;
   }
 }
 

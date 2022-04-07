@@ -13,11 +13,11 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 /* Home Page */
 body {
-  margin: 0;
   text-align: center;
   background: var(--primary-color);
   font-weight: 400;
@@ -345,12 +345,15 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: monospace;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
 }
 
 .cookie__consent-modal {
   background-color: var(--fourth-color);
   position: absolute;
-  width: 100%;
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +370,7 @@ a:active {
 
 .content p {
   text-align: justify;
+  padding: 15px;
 }
 
 .buttons {
