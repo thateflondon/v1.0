@@ -1,11 +1,11 @@
 // Handle the active class with JS
 
 // Modal handle
-let cookieConsent = document.getElementsByClassName("cookie__consent-modal");
+let cookieConsent = document.querySelector(".cookie__consent-modal");
 
 // Buttons handle
-let cancelCookieBtn = document.getElementsByClassName("button__cancel");
-let acceptCookieBtn = document.getElementsByClassName("button__accept");
+let cancelCookieBtn = document.querySelector(".button__cancel");
+let acceptCookieBtn = document.querySelector(".button__accept");
 
 // Add listener to buttons
 cancelCookieBtn.addEventListener("click", function () {
