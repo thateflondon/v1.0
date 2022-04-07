@@ -379,10 +379,14 @@ a:active {
   background-color: var(--fourth-color);
   position: absolute;
   width: 98%;
-  display: flex;
+  display: none;
   justify-content: center;
   bottom: 0.6em;
   border-radius: 5px;
+  z-index: 9999;
+}
+.active {
+  display: flex;
 }
 
 .content {
@@ -394,7 +398,7 @@ a:active {
   }
 }
 
-.buttons {
+.button {
   display: flex;
   justify-content: center;
   margin-top: 1.2em;
@@ -447,6 +451,10 @@ a:active {
     display: block;
     position: absolute;
     width: 100%;
+  }
+  // helps the cookie consent box to appear in the foreground on landscape screen mode
+  .cookie__consent-modal {
+    // z-index: 9999;
   }
 }
 
