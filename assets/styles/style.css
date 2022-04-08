@@ -351,7 +351,7 @@ a:active {
   height: 100%;
 }
 
-.cookie__consent-modal {
+.cookie__container .cookie__consent-modal {
   background-color: var(--fourth-color);
   position: absolute;
   width: 98%;
@@ -364,23 +364,17 @@ a:active {
   z-index: 9999;
 }
 
-.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.content {
+.cookie__container .cookie__consent-modal .content {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.content p {
+.cookie__container .cookie__consent-modal .content p {
   text-align: justify;
   padding: 15px;
 }
 
-.button {
+.cookie__container .cookie__consent-modal .content .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,7 +384,7 @@ a:active {
   margin-top: 1.2em;
 }
 
-.button .button__cancel {
+.cookie__container .cookie__consent-modal .content .button .button__cancel {
   border: 1px solid var(--primary-color);
   padding: 0.2em 0.5em;
   width: 50px;
@@ -400,12 +394,12 @@ a:active {
   color: var(--third-color);
 }
 
-.button .button__cancel:hover {
+.cookie__container .cookie__consent-modal .content .button .button__cancel:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.button .button__accept {
+.cookie__container .cookie__consent-modal .content .button .button__accept {
   border: 1px solid var(--primary-color);
   padding: 0.2em 0.5em;
   width: 50px;
@@ -418,9 +412,15 @@ a:active {
   color: var(--third-color);
 }
 
-.button .button__accept:hover {
+.cookie__container .cookie__consent-modal .content .button .button__accept:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.cookie__container .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* Responsive */

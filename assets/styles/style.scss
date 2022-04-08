@@ -373,62 +373,59 @@ a:active {
   font-family: monospace;
   width: 100%;
   height: 100%;
-}
-
-.cookie__consent-modal {
-  background-color: var(--fourth-color);
-  position: absolute;
-  width: 98%;
-  display: none;
-  justify-content: center;
-  bottom: 0.6em;
-  border-radius: 5px;
-  z-index: 9999;
-}
-.active {
-  display: flex;
-}
-
-.content {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  p {
-    text-align: justify;
-    padding: 15px;
-  }
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.2em;
-
-  .button__cancel {
-    border: 1px solid var(--primary-color);
-    padding: 0.2em 0.5em;
-    width: 50px;
-    margin-right: 1em;
-    border-radius: 15px;
-    text-transform: uppercase;
-    color: var(--third-color);
-    &:hover {
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
-    }
-  }
-  .button__accept {
-    border: 1px solid var(--primary-color);
-    padding: 0.2em 0.5em;
-    width: 50px;
-    border-radius: 15px;
-    text-transform: uppercase;
+  .cookie__consent-modal {
+    background-color: var(--fourth-color);
+    position: absolute;
+    width: 98%;
+    display: none;
     justify-content: center;
-    background-color: var(--primary-color);
-    color: var(--third-color);
-    &:hover {
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
+    bottom: 0.6em;
+    border-radius: 5px;
+    z-index: 9999;
+    .content {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      p {
+        text-align: justify;
+        padding: 15px;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.2em;
+
+        .button__cancel {
+          border: 1px solid var(--primary-color);
+          padding: 0.2em 0.5em;
+          width: 50px;
+          margin-right: 1em;
+          border-radius: 15px;
+          text-transform: uppercase;
+          color: var(--third-color);
+          &:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+          }
+        }
+        .button__accept {
+          border: 1px solid var(--primary-color);
+          padding: 0.2em 0.5em;
+          width: 50px;
+          border-radius: 15px;
+          text-transform: uppercase;
+          justify-content: center;
+          background-color: var(--primary-color);
+          color: var(--third-color);
+          &:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+          }
+        }
+      }
     }
+  }
+  .active {
+    display: flex;
   }
 }
 
@@ -451,10 +448,6 @@ a:active {
     display: block;
     position: absolute;
     width: 100%;
-  }
-  // helps the cookie consent box to appear in the foreground on landscape screen mode
-  .cookie__consent-modal {
-    // z-index: 9999;
   }
 }
 
