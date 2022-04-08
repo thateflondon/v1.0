@@ -13,11 +13,13 @@
 html,
 body {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Home Page */
 body {
-  margin: 0;
   text-align: center;
   background: var(--primary-color);
   font-weight: 400;
@@ -334,6 +336,91 @@ a:active {
 
 .flex-item p {
   color: var(--secondary-color);
+}
+
+/* Cookie Consent */
+.cookie__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: monospace;
+  width: 100%;
+  height: 100%;
+}
+
+.cookie__container .cookie__consent-modal {
+  background-color: var(--fourth-color);
+  position: absolute;
+  width: 98%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0.6em;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.cookie__container .cookie__consent-modal .content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cookie__container .cookie__consent-modal .content p {
+  text-align: justify;
+  padding: 15px;
+}
+
+.cookie__container .cookie__consent-modal .content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.2em;
+}
+
+.cookie__container .cookie__consent-modal .content .button .button__cancel {
+  border: 1px solid var(--primary-color);
+  padding: 0.2em 0.5em;
+  width: 50px;
+  margin-right: 1em;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: var(--third-color);
+}
+
+.cookie__container .cookie__consent-modal .content .button .button__cancel:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.cookie__container .cookie__consent-modal .content .button .button__accept {
+  border: 1px solid var(--primary-color);
+  padding: 0.2em 0.5em;
+  width: 50px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+
+.cookie__container .cookie__consent-modal .content .button .button__accept:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.cookie__container .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* Responsive */

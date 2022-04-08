@@ -14,7 +14,6 @@ cancelCookieBtn.addEventListener("click", function () {
 });
 
 acceptCookieBtn.addEventListener("click", function () {
-  //   alert(0);
   cookieConsent.classList.remove("active");
   //store the cookie in localStorage
   localStorage.setItem("cookieApprouved", "yes");
