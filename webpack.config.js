@@ -41,10 +41,12 @@ const plugins = [
   }),
   new PreloadWebpackPlugin({
     rel: "preload",
+    include: "asyncChunks",
+    media: "(min-width: 600px)",
     as(entry) {
       if (/\.css$/.test(entry)) return "style";
-      if (/\.woff$/.test(entry)) return "font";
-      if (/\.png$/.test(entry)) return "image";
+      if (/\.(woff|woff2|eot|ttf|otf)$/.test(entry)) return "font";
+      if (/\.(pdf|png|svg|jpg|jpeg|gif)$/.test(entry)) return "image";
       return "script";
     },
   }),
