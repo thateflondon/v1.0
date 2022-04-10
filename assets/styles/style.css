@@ -50,6 +50,7 @@ body {
   margin-top: 15px;
   position: absolute;
   top: 0;
+  right: 16px;
 }
 
 /* LOADER  */
@@ -300,6 +301,7 @@ a:active {
 
 .list-menu {
   list-style: none;
+  margin-left: 20px;
 }
 
 .flex-container {
