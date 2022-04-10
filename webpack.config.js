@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const { basename } = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -8,7 +9,6 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
 const PreloadWebpackPlugin = require("preload-webpack-plugin");
-const webpack = require("webpack");
 
 let mode = "development";
 let target = "web";
@@ -38,17 +38,6 @@ const plugins = [
     filename: "projects.html",
     template: "src/sections/projects/projects.html",
     chunks: ["projects"],
-  }),
-  new PreloadWebpackPlugin({
-    rel: "preload",
-    include: "asyncChunks",
-    media: "(min-width: 600px)",
-    as(entry) {
-      if (/\.css$/.test(entry)) return "style";
-      if (/\.(woff|woff2|eot|ttf|otf)$/.test(entry)) return "font";
-      if (/\.(pdf|png|svg|jpg|jpeg|gif)$/.test(entry)) return "image";
-      return "script";
-    },
   }),
   new FaviconsWebpackPlugin({
     logo: "./assets/images/logo.png",
@@ -114,6 +103,10 @@ const plugins = [
   }),
   new CleanWebpackPlugin(),
   new MiniCssExtractPlugin(),
+  // new PreloadWebpackPlugin({
+  //   rel: "preload",
+  //   as: "script",
+  // }),
 ];
 
 // if (process.env.NODE_ENV === "production") {
