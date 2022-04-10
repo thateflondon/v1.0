@@ -7,6 +7,7 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
+const PreloadWebpackPlugin = require("preload-webpack-plugin");
 const webpack = require("webpack");
 
 let mode = "development";
@@ -37,6 +38,15 @@ const plugins = [
     filename: "projects.html",
     template: "src/sections/projects/projects.html",
     chunks: ["projects"],
+  }),
+  new PreloadWebpackPlugin({
+    rel: "preload",
+    as(entry) {
+      if (/\.css$/.test(entry)) return "style";
+      if (/\.woff$/.test(entry)) return "font";
+      if (/\.png$/.test(entry)) return "image";
+      return "script";
+    },
   }),
   new FaviconsWebpackPlugin({
     logo: "./assets/images/logo.png",
