@@ -41,6 +41,8 @@ body {
   text-align: right;
   width: 95%;
   margin-right: 15px;
+  //fix theme mode button on screen size =< 800px
+  height: 40px;
 }
 #icon {
   width: 25px;
