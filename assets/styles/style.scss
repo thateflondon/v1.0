@@ -345,11 +345,15 @@ a:active {
   list-style: none;
   padding-left: 0px;
   // margin-left: 135px;
+  // background-color: red;
+    width: 100%;
+    justify-content: center;
+    display: grid;
   li{
     a{
       align-items: center;
       display: flex;
-      justify-content: center;
+      // justify-content: center;
     }
   }
 }
