@@ -283,11 +283,12 @@ a:active {
 }
 
 .circle-menu {
-  width: 300px;
-}
-
-.circle-menu .cm-link {
-  margin-left: 19.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menuItem a {
@@ -303,7 +304,18 @@ a:active {
 .list-menu {
   list-style: none;
   padding-left: 0px;
-  margin-left: 35px;
+}
+
+.list-menu li a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex-container {
@@ -323,9 +335,13 @@ a:active {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .flex-item {

@@ -21,6 +21,7 @@ body {
 /* Home Page */
 
 body {
+  // margin: 0;
   text-align: center;
   background: var(--primary-color);
   font-weight: 400;
@@ -320,9 +321,13 @@ a:active {
 }
 
 .circle-menu {
-  width: 300px;
+  // width: 300px;
+  display: flex;
+  justify-content: center;
   .cm-link {
-    margin-left: 19.5px;
+    // margin-left: 19.5px;
+    // margin-right: 50px;
+    // margin-left: 50px;
   }
 }
 
@@ -339,7 +344,14 @@ a:active {
 .list-menu {
   list-style: none;
   padding-left: 0px;
-  margin-left: 35px;
+  // margin-left: 135px;
+  li{
+    a{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .flex-container {
@@ -353,7 +365,9 @@ a:active {
 }
 
 .row {
+  display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .flex-item {
