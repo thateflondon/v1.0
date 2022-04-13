@@ -15,12 +15,16 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
+  // background-color: aquamarine;
 }
 
 /* Home Page */
 
 body {
+  // position: relative;
+  //    width: 100%;
+  //    overflow: hidden;
   // margin: 0;
   text-align: center;
   background: var(--primary-color);
@@ -292,6 +296,9 @@ body {
 
 #container {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   top: 0;
   right: 0;
@@ -322,18 +329,38 @@ a:active {
 
 .circle-menu {
   // width: 300px;
+  width: 100%;
+  // background-color: red;
+  height: 50px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   .cm-link {
+    width: 100%;
+    display: grid;
+    // position: relative;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
     // margin-left: 19.5px;
     // margin-right: 50px;
     // margin-left: 50px;
   }
 }
-
+.headItem{
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  margin-left: 30px;
+  // top: 100px;
+}
 .menuItem a {
   font-size: 1em;
   color: var(--secondary-color);
+  // background-color: yellow;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 #projects-list-home {
@@ -342,11 +369,13 @@ a:active {
 }
 
 .list-menu {
+  
   list-style: none;
   padding-left: 0px;
   // margin-left: 135px;
   // background-color: red;
     width: 100%;
+    // height: 100vh;
     justify-content: center;
     display: grid;
   li{
@@ -473,6 +502,15 @@ a:active {
   }
 }
 
+// @media screen and (min-width: 800.999px) {
+//   #app{
+//     background-color: aqua;
+//     .cm-link{
+//       margin-left: 22px;
+//     }
+//   }
+// }
+
 //DISABLE KURSOR DEPENDING ON SCREEN SIZE
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
@@ -497,3 +535,26 @@ a:active {
     cursor: auto;
   }
 }
+
+// @media screen and (orientation: landscape){
+//   #app{
+//     // background-color: yellow;
+//     .cm-link{
+//       // margin-left: 22px;
+//     }
+//   }
+// }
+
+
+// /* portrait */
+// @media screen and (orientation:portrait) {
+//   .[your-selector]{
+//       position:fixed;
+//   }
+// }
+// /* landscape */
+// @media screen and (orientation:landscape) {
+//   .[your-selector]{
+//       position:fixed;
+//   }
+// }
