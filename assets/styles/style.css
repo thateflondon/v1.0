@@ -328,6 +328,7 @@ a:active {
           justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-left: 20px;
 }
 
 #projects-list-home {
