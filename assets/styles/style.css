@@ -303,30 +303,24 @@ a:active {
   margin: 0 auto;
 }
 
-.circle-menu .cm-link {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  text-align: center;
+.circle-menu .circle__menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  text-align: center;
 }
 
-.headItem {
-  display: -ms-grid;
-  display: grid;
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 30px;
+.circle-menu .cm-link {
+  margin-left: 19.5px;
 }
 
 .menuItem a {
   font-size: 1em;
   color: var(--secondary-color);
+  background-color: yellow;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
