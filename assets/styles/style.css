@@ -320,7 +320,6 @@ a:active {
 .menuItem a {
   font-size: 1em;
   color: var(--secondary-color);
-  background-color: yellow;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
