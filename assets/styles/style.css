@@ -14,12 +14,12 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 /* Home Page */
 body {
+  overflow-x: hidden;
+  overflow-y: auto;
   text-align: center;
   background: var(--primary-color);
   font-weight: 400;
