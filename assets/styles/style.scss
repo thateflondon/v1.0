@@ -22,10 +22,6 @@ body {
 /* Home Page */
 
 body {
-  // position: relative;
-  //    width: 100%;
-  //    overflow: hidden;
-  // margin: 0;
   text-align: center;
   background: var(--primary-color);
   font-weight: 400;
@@ -42,7 +38,6 @@ body {
   --fourth-color: #aaaaaa;
 }
 .theme-color {
-  // flex: 1;
   text-align: right;
   width: 95%;
   margin-right: 15px;
@@ -69,8 +64,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  // top: 46vh;
-  // top: 0;
   width: 100%;
   height: 100vh;
   transition: opacity 4.5s ease;
@@ -328,9 +321,7 @@ a:active {
 }
 
 .circle-menu {
-  // width: 300px;
   width: 100%;
-  // background-color: red;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -339,33 +330,16 @@ a:active {
     display: flex;
     justify-content: center;
     text-align: center;
-    // margin-left: 10px;
   }
   .cm-link {
-    // margin-left: 300px;
-    // width: 100%;
-    // display: grid;
-    // text-align: center;
-    // justify-content: center;
-    // margin: 0 auto;
-    // position: relative;
     margin-left: 19.5px;
-    // margin-right: 50px;
-    // margin-left: 50px;
   }
 }
-// .headItem{
-//   display: grid;
-//   margin: 0 auto;
-//   justify-content: center;
-//   // margin-left: 30px;
-//   top: 100px;
-// }
+
 .menuItem{
   a {
     font-size: 1em;
     color: var(--secondary-color);
-    // background-color: yellow;
     display: grid;
     justify-content: center;
     box-sizing: border-box;
@@ -382,10 +356,7 @@ a:active {
   
   list-style: none;
   padding-left: 0px;
-  // margin-left: 35px;
-  // background-color: red;
     width: 100%;
-    // height: 100vh;
     justify-content: center;
     display: grid;
   li{
