@@ -484,7 +484,7 @@ a:active {
   display: flex;
 }
 
-/* Responsive */
+/******* Responsive *******/
 @media only screen and (max-width: 800px) {
   ul {
     -webkit-padding-start: 10px;

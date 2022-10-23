@@ -463,7 +463,7 @@ a:active {
   }
 }
 
-/* Responsive */
+/******* Responsive *******/
 
 @media only screen and (max-width: 800px) {
   ul {
@@ -486,7 +486,6 @@ a:active {
 }
 
 //DISABLE KURSOR DEPENDING ON SCREEN SIZE
-
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .notCursor * {
     cursor: auto;
@@ -509,3 +508,4 @@ a:active {
     cursor: auto;
   }
 }
+//DISABLE KURSOR DEPENDING ON SCREEN SIZE END
