@@ -3,7 +3,8 @@
 // Cookie modal handle
 let cookieConsent = document.querySelector(".cookie__consent-modal");
 
-let cookieSet = document.getElementById("app");
+// let cookieSet = document.getElementById("app");
+let cookieSet = document.querySelector("#app");
 
 // Buttons handle
 let cancelCookieBtn = document.querySelector(".button__cancel");
