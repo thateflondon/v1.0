@@ -56,6 +56,10 @@ body {
 
 #app {
   visibility: hidden;
+  
+  &.unset{
+    pointer-events: none;
+  }
 }
 
 #preloader {
@@ -456,6 +460,7 @@ a:active {
   }
   .active {
     display: flex;
+    background-color: red;
   }
 }
 

@@ -59,6 +59,10 @@ body {
   visibility: hidden;
 }
 
+#app.unset {
+  pointer-events: none;
+}
+
 #preloader {
   position: fixed;
   display: -webkit-box;
@@ -478,6 +482,7 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: red;
 }
 
 /* Responsive */
