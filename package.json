@@ -51,6 +51,12 @@
     "dev": "webpack-dev-server --mode=development --hot",
     "build": "webpack --mode=production"
   },
+  "overrides": {
+    "node-sass": "npm:sass@^1.69.4"
+  },
+  "resolutions": {
+    "node-sass": "npm:sass@^1.69.4"
+  },
   "keywords": [
     "Portfolio",
     "Web",
