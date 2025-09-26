@@ -8,7 +8,7 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
-const PreloadWebpackPlugin = require("preload-webpack-plugin");
+//const PreloadWebpackPlugin = require("preload-webpack-plugin");
 
 let mode = "development";
 let target = "web";
