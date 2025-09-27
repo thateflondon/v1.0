@@ -34,10 +34,17 @@ html {
   position: relative;
   min-height: 100%;
   scroll-behavior: smooth;
+
+  // Hide scrollbar for Firefox
+  scrollbar-width: none;
 }
 body {
   background-color: var(--primary-color);
   margin: 0 0 100px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 // HOME BUTTON
@@ -189,7 +196,7 @@ form {
   color: var(--secondary-color);
   font-family: monospace;
   cursor: none;
-  border: 0.1168vw solid var(--secondary-color);
+  border: 0.1vw solid var(--secondary-color);
   transition: all 0.3s ease-out;
   &:hover {
     background-color: var(--fourth-color);
