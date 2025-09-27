@@ -117,28 +117,30 @@ form {
 }
 
 /* border, padding, margin, width */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm #card-element {
+#fs-frm-inputs input,
+#fs-frm-inputs select,
+#fs-frm-inputs textarea,
+#fs-frm-inputs #card-element {
   border-bottom: 1px solid var(--secondary-color);
   background-color: var(--primary-color);
-  padding: 0.75em 1rem;
+  padding: 0.75em 0.3rem;
   margin-bottom: 2.5rem;
 }
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
-  background-color: white;
+  background-color: var(--primary-color);
   outline-style: solid;
   outline-width: thin;
-  outline-color: gray;
+  outline-color: var(--secondary-color);
   outline-offset: -1px;
 }
+
 #fs-frm [type="text"],
 #fs-frm [type="email"] {
   width: 100%;
 }
+
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
 #fs-frm [type="reset"] {
@@ -148,15 +150,18 @@ form {
   -moz-appearance: button;
   appearance: button;
 }
+
 #fs-frm [type="button"]:focus,
 #fs-frm [type="submit"]:focus,
 #fs-frm [type="reset"]:focus {
   outline: none;
 }
+
 #fs-frm [type="submit"],
 #fs-frm [type="reset"] {
   margin-bottom: 0;
 }
+
 #fs-frm select {
   text-transform: none;
 }
@@ -176,8 +181,16 @@ form {
   appearance: radio;
 }
 
-#send {
-  transition: all 1s ease-out;
+#fs-frm #send {
+  border: var(--secondary-color);
+  border-radius: 50%;
+  height: 50px;
+  padding: 0.75em 1rem;
+  color: var(--secondary-color);
+  font-family: monospace;
+  cursor: none;
+  border: 0.1168vw solid var(--secondary-color);
+  transition: all 0.3s ease-out;
   &:hover {
     background-color: var(--fourth-color);
   }
