@@ -610,15 +610,15 @@ body {
       text-decoration: none;
       .icon-handshake-o {
         &::before {
-          zoom: 2;
+          zoom: 1.5;
           filter: grayscale(1);
         }
       }
       #coloration {
         &:hover::before {
-          zoom: 3;
+          zoom: 2;
           filter: none;
-          transition: all ease-out 1s;
+          transition: all ease-out 0.3s;
           color: var(--secondary-color);
           @media only screen and (max-width: 768px) {
             cursor: pointer;

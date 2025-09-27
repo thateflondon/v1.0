@@ -104,6 +104,12 @@ form {
   align-items: baseline;
 }
 
+#fs-frm #fs-frm-inputs input,
+#fs-frm #fs-frm-inputs textarea {
+  color: var(--third-color);
+  font-family: monospace;
+}
+
 #fs-frm label {
   color: var(--secondary-color);
   font-family: monospace;
