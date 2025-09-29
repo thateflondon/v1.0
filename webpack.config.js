@@ -7,8 +7,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const { extendDefaultPlugins } = require("svgo");
-const PreloadWebpackPlugin = require("preload-webpack-plugin");
+//const { extendDefaultPlugins } = require("svgo");
+//const PreloadWebpackPlugin = require("preload-webpack-plugin");
 
 let mode = "development";
 let target = "web";
@@ -39,6 +39,11 @@ const plugins = [
     template: "src/sections/projects/projects.html",
     chunks: ["projects"],
   }),
+  new HtmlWebpackPlugin({
+    filename: "resume.html",
+    template: "src/sections/resume/resume.html",
+    chunks: ["resume"],
+  }),
   new FaviconsWebpackPlugin({
     logo: "./assets/images/logo.png",
     inject: (htmlPlugin) =>
@@ -64,43 +69,57 @@ const plugins = [
     inject: (htmlPlugin) =>
       basename(htmlPlugin.options.filename) === "projects.html",
   }),
+  new FaviconsWebpackPlugin({
+    logo: "./assets/images/logo.png",
+    inject: (htmlPlugin) =>
+      basename(htmlPlugin.options.filename) === "resume.html",
+  }),
   new CopyPlugin({
     patterns: [
       // Helps to dynamicaly handle img change in dark mode function
       { from: "./assets/images/moon.png", to: "images" },
       { from: "./assets/images/sun.png", to: "images" },
-      { from: "./assets/images/profile/resume/resume-FR.pdf", to: "images" },
+      // { from: "./assets/images/profile/resume/resume-FR.pdf", to: "images" },
+      { from: "./assets/images/profile/resume/CV_FREDERIC_JERRY_FRONTEND_EN.pdf", to: "images" },
+      { from: "./assets/images/profile/resume/CV_FREDERIC_JERRY_FRONTEND_FR.pdf", to: "images" },
     ],
   }),
+  // Disable ImageMinimizerPlugin
+  /*
   new ImageMinimizerPlugin({
-    minimizerOptions: {
-      // Lossless optimization with custom option
-      // Feel free to experiment with options for better result for you
-      plugins: [
-        ["gifsicle", { interlaced: true }],
-        ["jpegtran", { progressive: true }],
-        ["optipng", { optimizationLevel: 5 }],
-        // Svgo configuration here https://github.com/svg/svgo#configuration
-        [
-          "svgo",
-          {
-            plugins: extendDefaultPlugins([
-              {
-                name: "removeViewBox",
-                active: false,
-              },
-              {
-                name: "addAttributesToSVGElement",
-                params: {
-                  attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
+    minimizer: {
+      implementation: ImageMinimizerPlugin.imageminMinify,
+      options: {
+        // Lossless optimization with custom option
+        // Feel free to experiment with options for better result for you
+        plugins: [
+          ["imagemin-gifsicle", { interlaced: true }],
+          ["imagemin-jpegtran", { progressive: true }],
+          ["imagemin-optipng", { optimizationLevel: 5 }],
+          // new SVGO v3 configuration
+          [
+            "imagemin-svgo",
+            {
+              plugins: [
+                "preset-default", // Utilise les plugins par défaut de SVGO v3
+                {
+                  name: "removeViewBox",
+                  active: false, // Garde les viewBox
                 },
-              },
-            ]),
-          },
+                {
+                  name: "addAttributesToSVGElement",
+                  params: {
+                    attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
+                  },
+                },
+              ],
+            },
+          ],
         ],
-      ],
+      },
     },
   }),
+  */
   new CleanWebpackPlugin(),
   new MiniCssExtractPlugin(),
   // new PreloadWebpackPlugin({
@@ -127,6 +146,7 @@ module.exports = {
     contact: "./src/contact.js",
     design: "./src/design.js",
     projects: "./src/projects.js",
+    resume: "./src/resume.js",
   },
 
   ignoreWarnings: [

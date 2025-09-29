@@ -16,7 +16,7 @@
 <h2>DESCRIPTION</h2>
 </div>
 
-This project is my personal portfolio made from scratch. The purpose here is of course to showcase my abilities as a Junior Developer. Feel free to take a tour on my [portfolio](https://www.jfpl.fr). If you have any questions, suggestions or an awesome project you want to talk about, just hit the contact button.
+This project is my personal portfolio made from scratch. The purpose here is of course to showcase my abilities as a Frontend Developer. Feel free to take a tour on my [portfolio](https://www.jfpl.fr). If you have any questions, suggestions or an awesome project you want to talk about, just hit the contact button.
 
 <div align="center">
 <img alt="demo" src="https://github.com/thateflondon/v1.0/blob/a7799c21dcf86e9fb956f42c269d0e371919f1a3/assets/images/demo.png"/>
@@ -31,13 +31,13 @@ This project is my personal portfolio made from scratch. The purpose here is of 
 </div>
 
 <div align="center">
-<p>VS Code</p>
+<p>Javascript(ES6)</p>
 <p>HTML</p>
 <p>SASS</p>
 <p>NODE JS</p>
-<p>ES6</p>
 <p>JQUERY</p>
 <p>WEBPACK</p>
+<p>VS Code</p>
 </div>
 
 <div align="center">
