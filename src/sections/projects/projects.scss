@@ -38,6 +38,9 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+
   img {
     color: var(--third-color);
     -webkit-transform: scale(1);
@@ -63,6 +66,7 @@ body {
   margin: 0 auto;
   background-color: var(--primary-color);
 
+  // Hide scrollbar
   &::-webkit-scrollbar {
     display: none;
   }
@@ -438,6 +442,7 @@ img {
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
+  transform: rotate(180deg);
 }
 
 .top-button.active {

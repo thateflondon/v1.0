@@ -39,6 +39,11 @@ const plugins = [
     template: "src/sections/projects/projects.html",
     chunks: ["projects"],
   }),
+  new HtmlWebpackPlugin({
+    filename: "resume.html",
+    template: "src/sections/resume/resume.html",
+    chunks: ["resume"],
+  }),
   new FaviconsWebpackPlugin({
     logo: "./assets/images/logo.png",
     inject: (htmlPlugin) =>
@@ -64,12 +69,19 @@ const plugins = [
     inject: (htmlPlugin) =>
       basename(htmlPlugin.options.filename) === "projects.html",
   }),
+  new FaviconsWebpackPlugin({
+    logo: "./assets/images/logo.png",
+    inject: (htmlPlugin) =>
+      basename(htmlPlugin.options.filename) === "resume.html",
+  }),
   new CopyPlugin({
     patterns: [
       // Helps to dynamicaly handle img change in dark mode function
       { from: "./assets/images/moon.png", to: "images" },
       { from: "./assets/images/sun.png", to: "images" },
-      { from: "./assets/images/profile/resume/resume-FR.pdf", to: "images" },
+      // { from: "./assets/images/profile/resume/resume-FR.pdf", to: "images" },
+      { from: "./assets/images/profile/resume/CV_FREDERIC_JERRY_FRONTEND_EN.pdf", to: "images" },
+      { from: "./assets/images/profile/resume/CV_FREDERIC_JERRY_FRONTEND_FR.pdf", to: "images" },
     ],
   }),
   // Disable ImageMinimizerPlugin
@@ -134,6 +146,7 @@ module.exports = {
     contact: "./src/contact.js",
     design: "./src/design.js",
     projects: "./src/projects.js",
+    resume: "./src/resume.js",
   },
 
   ignoreWarnings: [

@@ -5,6 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+    <meta
+      name="description"
+      content="You can find here my resume with my experiences, education and skills."
+    />
+    <meta
+      name="keywords"
+      content="Jerry, Frederic, portfolio, web projects, Frontend, development, resume, experiences, education, skills"
+    />
+    <link rel="canonical" href="./resume.html" />
+
+    <meta property="og:url" content="./resume.html" />
+    <meta property="og:image" content="../../../assets/images/logo.png" />
+    <meta
+      property="og:description"
+      content="You can find here my resume with my experiences, education and skills."
+    />
+    <meta property="og:title" content="resume" />
+    <meta property="og:site_name" content="Jerry Frederic" />
+    <meta property="og:see_also" content="../../../index.html" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="./resume.html" />
+    <meta name="twitter:title" content="Resume" />
+    <meta
+      name="twitter:description"
+      content="You can find here my resume with my experiences, education and skills."
+    />
+    <meta name="twitter:image" content="../../../assets/images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/rolly.js@0.2.1/css/style.css"
+    />
     <link rel="stylesheet" href="./resume.css" />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
   </head>
@@ -15,11 +47,74 @@
       <img id="icon" src="../../../assets/images/moon.png" alt="moon" />
     </div>
     <!-- Night mode end-->
-    <div class="resume">
-      <div class="resume-container"></div>
+    <div class="app">
+      <!-- home page button  -->
+      <div id="home-button" data-scene data-speed="1">
+        <a href="./index.html">
+          <img
+            style="width: 30px; height: 30px"
+            src="../../../assets/images/icons/home.png"
+            alt="home page button"
+          />
+        </a>
+      </div>
+      <!-- home page button end  -->
+
+      <!-- Resume -->
+      <div class="app-container">
+        <!-- container  -->
+        <div class="resume-container">
+          <h1 class="resume-title">
+            Download my resume in the language your need!
+          </h1>
+          <div class="resume-choice">
+            <!-- <div class="en">ENGLISH</div>
+            <div class="fr">FRENCH</div> -->
+
+            <a
+              class="en"
+              href="/images/CV_FREDERIC_JERRY_FRONTEND_EN.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="English resume"
+              title="English resume"
+              >ENGLISH</a
+            >
+
+            <a
+              class="en"
+              href="/images/CV_FREDERIC_JERRY_FRONTEND_FR.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="French resume"
+              title="French resume"
+              >FRENCH</a
+            >
+          </div>
+        </div>
+        <!-- container end -->
+      </div>
+      <!-- Resume End  -->
+
+      <!-- Footer -->
+      <footer>
+        <div class="copyright">
+          <p>
+            Copyright&nbsp;©&nbsp;
+            <span id="year"></span>
+          </p>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Scripts -->
+      <script src="../../../scripts/theme.js"></script>
+      <script src="../../../scripts/date.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+      <script src="../../../scripts/kursor.js"></script>
+      <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+      <script src="../../../scripts/detectSmallOrMediumScreens.js"></script>
+      <!-- Scripts End -->
     </div>
-    <script src="../../../scripts/theme.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
-    <script src="../../../scripts/kursor.js"></script>
   </body>
 </html>

@@ -21,19 +21,115 @@
 }
 
 html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  // Hide scrollbar for Firefox
+  scrollbar-width: none;
+}
+
+// HOME BUTTON
+#home-button {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+
+  img {
+    color: var(--third-color);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      margin-left: 5px;
+    }
+  }
+}
+
+html {
   height: 100%;
   box-sizing: border-box;
-  body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: monospace;
-    margin: 0;
-    background-color: var(--primary-color);
+}
+
+body {
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: monospace;
+  margin: 0;
+  background-color: var(--primary-color);
+
+  // Hide scrollbar
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.app {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.resume-title {
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.resume-choice {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+
+  .en,
+  .fr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--secondary-color);
+    border-radius: 25px;
+    padding: 2% 8%;
     color: var(--third-color);
-    font-size: 15px;
-    line-height: 1.5;
+    font-family: monospace;
+    text-decoration: none;
+    cursor: none;
+    border: 0.1vw solid var(--third-color);
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background-color: var(--fourth-color);
+      border-color: var(--secondary-color);
+      color: var(--secondary-color);
+    }
+  }
+}
+
+//FOOTER
+footer {
+  font-family: monospace;
+  font-size: 15px;
+  .copyright {
+    display: flex;
+    justify-content: center;
+    p {
+      color: var(--third-color);
+      #year {
+        color: var(--secondary-color);
+      }
+    }
   }
 }
