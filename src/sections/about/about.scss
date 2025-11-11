@@ -399,7 +399,7 @@ body {
         color: var(--fourth-color);
       }
 
-      @for $i from 1 through 8 {
+      @for $i from 1 through 9 {
         &.tab-#{$i}.active {
           & ~ .highlighter {
             transform: translateY(#{($i * $tab-height) - $tab-height});
