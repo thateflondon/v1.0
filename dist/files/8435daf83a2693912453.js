@@ -1,1 +1,0 @@
-function smoothScrollToTop(){window.scrollTo({top:0,behavior:"smooth"})}window.addEventListener("scroll",function(){document.querySelector(".top-button").classList.toggle("active",window.scrollY>100)}),window.smoothScrollToTop=smoothScrollToTop;
